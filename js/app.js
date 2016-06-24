@@ -1,4 +1,9 @@
 $(function() {
+    $('#fullpage').fullpage({
+        scrollBar: true,
+        menu: '#slideMenu'
+    });
+
     $('.option.header').mouseenter(function () {
         var $this = $(this),
             $dropdown = $this.siblings('.option-dropdown');
@@ -12,13 +17,22 @@ $(function() {
     })
 
     $('.toggle-menu').click(function () {
-            $('.main-nav').addClass('open');
-            $('body').append('<div class="black-overlay"></div>');
-            $('.black-overlay').one('click', function () {
-                $('.main-nav').removeClass('open');
-                $('.black-overlay').remove();
-            });
+        $('.main-nav').addClass('open');
+        $('body').append('<div class="black-overlay"></div>');
+        $('.black-overlay').one('click', function () {
+            $('.main-nav').removeClass('open');
+            $('.black-overlay').remove();
         });
+    });
+
+    $(window).scroll(function(){
+        var scroll = $(this).scrollTop();
+        if(scroll > 0) {
+            $('.slide-menu').addClass('show');
+        } else {
+            $('.slide-menu').removeClass('show');
+        }
+    });
 });
 
 header = {

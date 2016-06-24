@@ -9,7 +9,7 @@ body {
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.4);
-    z-index: 7;
+    z-index: 7000;
 }
 
 .main-nav, .nav-backdrop {
@@ -123,6 +123,19 @@ body {
     background-color: rgba(0,0,0,0.3);
 }
 
+.cover .gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e5911+68,1e5799+100&0+0,0.2+68,1+100 */
+    background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(30,89,17,0.2) 68%, rgba(30,87,153,0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(30,89,17,0.2) 68%,rgba(30,87,153,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(30,89,17,0.2) 68%,rgba(30,87,153,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#991e5799',GradientType=0 ); /* IE6-9 */
+}
+
 .cover .content {
     position: relative;
     top: 50%;
@@ -144,10 +157,85 @@ body {
     font-size: 24px;
 }
 
+.slide-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding-left: 0px;
+    list-style: none;
+    z-index: 5000;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.slide-menu.show {
+    opacity: 1;
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+}
+
+.slide-menu li {
+    position: relative;
+    margin: 10px;
+    color: #000;
+    background: rgba(255,255,255,.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+.slide-menu li:hover {
+    background: rgba(255,255,255,.7);
+}
+
+.slide-menu li:after {
+    content: "";
+    background: rgba(255,255,255,.5);
+    position: absolute;
+    bottom: -10px;
+    height: 10px;
+    width: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.slide-menu li:last-child:after {
+    height: 0px;
+}
+
+.slide-menu li.active {
+    background: rgba(0,0,0,.5);
+    color: #fff;
+}
+
+.slide-menu li a {
+    color: inherit;
+    padding: 9px 18px;
+    display: block;
+}
+
+.slide-menu li a:hover, .slide-menu li a:focus, .slide-menu li a:active {
+    text-decoration: none;
+}
+
+.section:not(.fp-auto-height) {
+    height: 100vh;
+}
+
+.section h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
 @media (max-width: 767px) {
 
     .main-nav, .nav-backdrop {
         height: 38px;
+        z-index: 10000;
     }
 
     .toggle-menu {
@@ -161,6 +249,11 @@ body {
         height: 3px;
         background-color: #fff;
         margin: 4px auto;
+    }
+
+    .cover {
+        background-attachment: scroll;
+        height: 100vh;
     }
 
     .main-nav .options-wrapper {
@@ -205,5 +298,47 @@ body {
 
     .main-nav .option-item {
         padding: 4px 0;
+    }
+
+    .slide-menu {
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .slide-menu li {
+        display: inline-block;
+        margin: 3px;
+    }
+
+    .slide-menu li:after {
+        bottom: 50%;
+        height: 5px;
+        width: 10px;
+        left: 100%;
+        transform: translate(0, 50%);
+    }
+
+    .slide-menu li a {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .slide-menu {
+        bottom: 5px;
+    }
+
+    .slide-menu li {
+        margin: 0;
+    }
+
+    .slide-menu li:after {
+        width: 4px;
+    }
+
+    .slide-menu li a {
+        padding: 4px 8px;
+        font-size: 10px;
     }
 }
