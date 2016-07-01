@@ -12,6 +12,10 @@ body {
     z-index: 7000;
 }
 
+.traslucent {
+    opacity: 0;
+}
+
 .main-nav, .nav-backdrop {
     position: fixed;
     top: 0;
@@ -54,6 +58,10 @@ body {
     flex-grow: 1;
     color: #fff;
     padding: 4px 8px;
+    left: 0px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .main-nav .option-item.active {
@@ -68,43 +76,50 @@ body {
 }
 
 .main-nav .option-dropdown {
-    top: 40px;
-    background-color: #fafafa;
-    max-height: 0;
-    min-width: 100%;
-    box-shadow: 1px 1px 1px 0px #333; 
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.main-nav .option.header.active-menu {
+    font-weight: 600;
+    border-right: #fff solid 1px;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.main-nav .active .option.header.active-menu {
+    padding-bottom: 3px;
+    border-bottom: #fff solid 2px;
+    border-right: #fff solid 1px;
+}
+
+.main-nav .option.header.active-menu + .option-dropdown {
+    top: 1px;
+    display: block;
+    opacity: 1;
     position: absolute;
-    overflow-y: hidden;
-    -webkit-transition: max-height 0.3s;
-    -moz-transition: max-height 0.3s;
-    transition: max-height 0.3s;
+    width: 100vw;
 }
 
-.main-nav .option-dropdown.open {    
-    border: #bcbcbc solid 1px;
+.main-nav .option.header+ .option-dropdown .option {
+    transform: translate(200px);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    transition: transform 0.3s;
 }
 
-.main-nav .option-dropdown .option {
-    padding: 5px;
-    color: #333;
-    white-space: nowrap;
+.main-nav .option.header.active-menu + .option-dropdown .option {
+    display: inline-block;
+    padding: 3px 15px;
 }
-
-.main-nav .option-dropdown .option:hover {
-    background-color: #ddd;
-}
-
-.main-nav .option-dropdown a.option {
-    color: #333;
-}
-
 
 .cover {
     z-index: 5;
     display: block;
-    background: url(../img/cover.jpg) no-repeat center center;
+    background: url(../img/cover.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-color: #333;
@@ -114,13 +129,41 @@ body {
     position: relative;
 }
 
-.cover .overlay {
+.mini-cover {
+    z-index: 5;
+    display: block;
+    background: url(../img/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #333;
+    height: 200px;
+    max-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.cover .overlay, .mini-cover .overlay {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(0,0,0,0.3);
+}
+
+.mini-cover .gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,3163c6+100&0+0,0+65,0.55+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(121,154,218,0) 65%, rgba(0,0,0,0.55) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%,rgba(121,154,218,0) 65%,rgba(0,0,0,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(121,154,218,0) 65%,rgba(0,0,0,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#8c3163c6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .cover .gradient-overlay {
@@ -136,7 +179,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#991e5799',GradientType=0 ); /* IE6-9 */
 }
 
-.cover .content {
+.cover .content, .mini-cover .content {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -144,16 +187,16 @@ body {
     text-align: center;
 }
 
-.cover .content h1 {
+.cover .content h1, .mini-cover .content h1 {
     margin-top: 0px;
     font-size: 48px;
 }
 
-.cover .content {
+.cover .content, .mini-cover .content {
     color: #fff;
 }
 
-.cover .content h3 {
+.cover .content h3, .mini-cover .content h3 {
     font-size: 24px;
 }
 
@@ -231,17 +274,32 @@ body {
     margin: 0;
 }
 
+#bodyContent .section p, .section p {
+    color: #fff;
+    text-align: center;
+    margin: 0 5vw;
+    font-size: 30px;
+}
+
 @media (max-width: 767px) {
 
     .main-nav, .nav-backdrop {
         height: 38px;
-        z-index: 10000;
+    }
+
+    .main-nav {
+        z-index: 9500;
+    }
+
+    .nav-backdrop {
+        z-index: 9499;
     }
 
     .toggle-menu {
         width: 38px;
         height: 38px;
         padding: 6px 0;
+        cursor: pointer;
     }
 
     .burger {
@@ -285,25 +343,59 @@ body {
     .main-nav .option-item.active {
         border: 0;
         background-color: #33c;
-    }
+    }   
 
     .main-nav .option-dropdown {
-        position: relative;
+        display: block;
+        opacity: 1;
         top: 0;
-        border-radius: 0;
-        box-shadow: none;
         border: none;
         padding: 0;
+        background-color: #fafafa;
+        max-height: 0;
+        min-width: 100%;
+        position: relative;
+        overflow-y: hidden;
+        -webkit-transition: max-height 0.3s;
+        -moz-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+    }
+
+    .main-nav .option-dropdown.open {    
+        border: #bcbcbc solid 1px;
+    }
+
+    .main-nav .option-dropdown .option {
+        padding: 5px;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .main-nav .option-dropdown .option:hover {
+        background-color: #ddd;
+    }
+
+    .main-nav .option-dropdown a.option {
+        color: #333;
+    }
+
+    .main-nav .option-dropdown .option {
+        display: block;
     }
 
     .main-nav .option-item {
         padding: 4px 0;
     }
 
+    .main-nav .option.header+ .option-dropdown .option {
+        transform: translate(0px);
+    }
+
     .slide-menu {
         left: 0;
         width: 100%;
         text-align: center;
+        margin: 0 !important;
     }
 
     .slide-menu li {
@@ -321,6 +413,10 @@ body {
 
     .slide-menu li a {
         padding: 5px 10px;
+    }
+
+    #bodyContent .section p, .section p {
+        font-size: 20px;
     }
 }
 

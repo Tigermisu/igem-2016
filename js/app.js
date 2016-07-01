@@ -1,20 +1,48 @@
 $(function() {
-    $('#fullpage').fullpage({
-        scrollBar: true,
-        menu: '#slideMenu'
+    $(document).on('click', '.option.header:not(.active-menu)', function () {
+        var $this = $(this),
+            $dropdown = $this.siblings('.option-dropdown'),
+            $parent = $this.parent();
+        if(!$(this)[0].hasAttribute('href')) {
+            if($(window).width() > 767) {
+                if($('.active-menu').length > 0) {
+                    $('.active-menu').click();
+                } else {
+                    var tgtLeft = $('#menuStart').offset().left - $this.offset().left;
+                    $('.option-item').not($parent).addClass('traslucent');
+                    $parent.css({
+                        left: tgtLeft,
+                        border: 'none',
+                        zIndex: 100
+                    });
+                    $dropdown.css({
+                        left: $parent.width(),
+                        width: $('#optionsWrapper').width() - $parent.width()
+                    })
+                    $(this).addClass('active-menu');
+                    $dropdown.find('.option').each(function(i, elem) {
+                        setTimeout(function(){
+                            $(elem).css('transform', 'translate(0)');
+                        }, 60 * i);
+                    });
+                }
+            } else {
+                header.toggleHeader($dropdown);
+            }
+        }
     });
 
-    $('.option.header').mouseenter(function () {
+    $(document).on('click', '.active-menu', function(){ 
         var $this = $(this),
-            $dropdown = $this.siblings('.option-dropdown');
-        $('.option-dropdown').unbind('.closeEvent');
-        header.openHeader($dropdown);
-        $dropdown.one('mouseenter.closeEvent', function () {
-            $dropdown.one('mouseleave.closeEvent', function () {
-                header.toggleHeader($dropdown); 
-            }); 
-        });        
-    })
+            $dropdown = $this.siblings('.option-dropdown'),
+            $parent = $this.parent();
+        $('.option-item').not($this).removeClass('traslucent');
+        $this.removeClass('active-menu');
+        $parent.removeAttr('style');
+        $dropdown.removeAttr('style');
+        $dropdown.find('.option').removeAttr('style');
+
+    });
 
     $('.toggle-menu').click(function () {
         $('.main-nav').addClass('open');

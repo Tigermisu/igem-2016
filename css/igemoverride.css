@@ -1,0 +1,13 @@
+#globalWrapper #sideMenu, #globalWrapper #top_title, #globalWrapper #top_menu_under, #globalWrapper #top_menu_14, #mw-content-text > p:nth-child(1) {
+    display: none;
+}
+
+#globalWrapper #content {
+    width: 100%;
+    padding: 0;
+    border: none;
+    color: initial;
+    margin: 0;
+    background-color: initial;
+    position: relative;
+}
