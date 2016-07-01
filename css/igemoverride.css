@@ -1,5 +1,9 @@
-#globalWrapper #sideMenu, #globalWrapper #top_title, #globalWrapper #top_menu_under, #globalWrapper #top_menu_14, #mw-content-text > p:nth-child(1) {
+#globalWrapper #sideMenu, #globalWrapper #top_title, #mw-content-text > p:nth-child(1) {
     display: none;
+}
+
+#globalWrapper #top_menu_under {
+    height: 14px;
 }
 
 #globalWrapper #content {

@@ -1,4 +1,32 @@
 $(function() {
+    $('#fullpage').fullpage({
+        scrollBar: true,
+        menu: '#slideMenu',
+        onLeave: function(index, nextIndex, direction){
+            if(nextIndex == 6 || nextIndex == 1) {
+                $('.slide-menu').removeClass('show');
+                if(nextIndex == 1) {
+                    $('#upArrow').addClass('nope');
+                } else {
+                    $('#downArrow').addClass('nope');
+                    $('#upArrow').addClass('go-down');
+                }
+            } else {
+                $('.slide-menu').addClass('show');
+                $('.control-arrows span').removeClass('nope');
+                $('#upArrow').removeClass('go-down');
+            }
+        }
+    });
+
+    $('#upArrow').click(function() {
+        $.fn.fullpage.moveSectionUp();
+    });
+
+    $('#downArrow').click(function() {
+        $.fn.fullpage.moveSectionDown();
+    });
+
     $(document).on('click', '.option.header:not(.active-menu)', function () {
         var $this = $(this),
             $dropdown = $this.siblings('.option-dropdown'),
@@ -51,15 +79,6 @@ $(function() {
             $('.main-nav').removeClass('open');
             $('.black-overlay').remove();
         });
-    });
-
-    $(window).scroll(function(){
-        var scroll = $(this).scrollTop();
-        if(scroll > 0) {
-            $('.slide-menu').addClass('show');
-        } else {
-            $('.slide-menu').removeClass('show');
-        }
     });
 });
 
