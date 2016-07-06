@@ -1,23 +1,35 @@
 $(function() {
-    $('#fullpage').fullpage({
-        scrollBar: true,
-        menu: '#slideMenu',
-        onLeave: function(index, nextIndex, direction){
-            if(nextIndex == 6 || nextIndex == 1) {
-                $('.slide-menu').removeClass('show');
-                if(nextIndex == 1) {
-                    $('#upArrow').addClass('nope');
+    try {
+        $('#fullpage').fullpage({
+            scrollBar: true,
+            menu: '#slideMenu',
+            onLeave: function(index, nextIndex, direction){
+                if(nextIndex == 6 || nextIndex == 1) {
+                    $('.slide-menu').removeClass('show');
+                    if(nextIndex == 1) {
+                        $('#upArrow').addClass('nope');
+                    } else {
+                        $('#downArrow').addClass('nope');
+                        $('#upArrow').addClass('go-down');
+                    }
                 } else {
-                    $('#downArrow').addClass('nope');
-                    $('#upArrow').addClass('go-down');
+                    $('.slide-menu').addClass('show');
+                    $('.control-arrows span').removeClass('nope');
+                    $('#upArrow').removeClass('go-down');
                 }
-            } else {
-                $('.slide-menu').addClass('show');
-                $('.control-arrows span').removeClass('nope');
-                $('#upArrow').removeClass('go-down');
             }
-        }
-    });
+        });
+    } catch(e) {
+
+    }
+
+    try {
+        window.sr = ScrollReveal();
+        sr.reveal('.team-member');
+        sr.reveal('.std-section h2');
+    } catch(e) {
+
+    }
 
     $('#upArrow').click(function() {
         $.fn.fullpage.moveSectionUp();
