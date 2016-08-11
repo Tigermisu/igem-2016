@@ -349,10 +349,20 @@ body {
 
 .team-member {
     margin-bottom: 30px;
+    position: relative;
 }
 
 .team-member img {
     margin: 0px auto;
+}
+
+.member-description p.meta {
+    color: #555;
+    font-weight: 600;
+}
+
+.member-description p.meta::nth-child(2) {    
+    margin-top: 80px;
 }
 
 .footer {
@@ -385,6 +395,10 @@ body {
 
     .nav-backdrop {
         z-index: 9499;
+    }
+
+    .logo img {
+        height: 27px;
     }
 
     .toggle-menu {
