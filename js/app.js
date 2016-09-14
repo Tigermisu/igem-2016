@@ -158,19 +158,187 @@ calendar = {
                 Día: "7",
                 Imagen_principal: ["http://igem.org/wiki/images/thumb/1/10/7enero.jpg/800px-7enero.jpg"],
                 Texto: "Today we had our first official meeting!<br>iGEM Tec Chihuahua is integrated by 14 undergraduate students from 3rd, 5th and 7th semester of Engineering Biotechnology, and our two advisors: Cd.Ph.D. Cynthia Lorena González Trevizo and Ph.D. Silvia Lorena Montes Fonseca."
+            }
+        ],
+
+        [
+            //febrero
+        ],
+
+        [
+            {
+            Título: "ConocerTEC",
+            Categoría: "Diffusion",
+            Mes: "03",
+            Día: "12",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/4/41/12marzoa.jpg/800px-12marzoa.jpg",
+                    "http://igem.org/wiki/images/b/b9/12marzob.jpg"],
+            
+            Texto: "We went to our school’s open house to speak about biotechnology, iGEM and our project to bachelor students",
+            },
+
+        ],
+
+        [
+            //abril
+        ],
+
+        [
+            {
+            Título: "Training begins!",
+            Categoría: "Project",
+            Mes: "05",
+            Día: "23",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/1/1d/23mayoa.jpg/800px-23mayoa.jpg",
+                    "http://igem.org/wiki/images/thumb/b/b2/23mayob.jpg/800px-23mayob.jpg",
+                    "http://igem.org/wiki/images/thumb/b/bf/23mayoc.jpg/800px-23mayoc.jpg"],
+            Texto: "After we officially finished the semester and we were out on summer vacations, the whole team started doing training practices so we all knew how to do every lab procedure."
+
             },
 
             {
-                Título: "Multiple images test",
-                Categoría: "Human Practices",
-                Mes: "01",
-                Día: "7",
-                Imagen_principal: ["http://igem.org/wiki/images/thumb/1/10/7enero.jpg/800px-7enero.jpg",
-                                   "http://lorempixel.com/800/720",
-                                   "http://lorempixel.com/800/800"],
-                Texto: "This is a thing to test multiple images on a single entry."
+            Título: "Today we FINALLY decided our project!",
+            Categoría: "Project",
+            Mes: "05",
+            Día: "26",
+            Imagen_principal: ["http://igem.org/wiki/images/5/5c/26mayo.jpg"],
+            Texto: "After going through a lot of project ideas and a lot of deliberation, we finally settled on the use of Myxobacterias for fungal control in alfalfa crops.",
             }
+
         ],
+        
+        [
+            {
+            Título: "Meeting with LATAM Ambassador Ana Sifuentes",
+            Categoría: "Meeting",
+            Mes: "06",
+            Día: "8",
+            Imagen_principal: ["http://igem.org/wiki/images/6/67/Staff_hq_ana.jpg"],
+            Texto: "Today we presented our project and perspectives to the Ambassador of Latin America Ana Sifuentes. She made some suggestions and commented on our ideas to help us enhance it."
+            },
+
+            {
+            Título: "Full team meeting (including other career members)",
+            Categoría: "Meeting",
+            Mes: "06",
+            Día: "14",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/7/73/14junioa.jpg/800px-14junioa.jpg", 
+                    "http://igem.org/wiki/images/thumb/8/8d/14juniob.jpg/800px-14juniob.jpg"],
+            Texto: "This day was the meeting with all the team members, we exposed the progress of the differents areas of the project, we settled the things to do and established the organization of the new tasks.",
+            },
+
+            {
+            Título: "Gram Staining",
+            Categoría: "Project",
+            Mes: "06",
+            Día: "14",
+            Imagen_principal: ["http://igem.org/wiki/images/3/37/14junio1.jpg",
+            "http://igem.org/wiki/images/7/7c/14junio2.jpg"],
+            Texto: "After reviving one of the myxobacteria species that was stored frozen, (presumably Myxococcus xanthus), and cultivating it until we had decent size colonies, we proceeded to do gram staining in order to see if we indeed had the correct bacterias",
+            },
+
+            {
+            Título: "Official Picture",
+            Categoría: "iGEM",
+            Mes: "06",
+            Día: "16",
+            Imagen_principal: ["http://igem.org/wiki/images/7/70/16junio.jpg"],
+            Texto: "Now that the the whole team knew each other, we arranged a photoshoot in order to have group and individual photos.",
+            },
+
+            {
+            Título: "Visit to cultivations: interviews to the labor union",
+            Categoría: "Human Practices",
+            Mes: "06",
+            Día: "17",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/3/33/17junioa.jpg/800px-17junioa.jpg", 
+                    "http://igem.org/wiki/images/thumb/7/7c/17juniob.jpg/800px-17juniob.jpg"],
+            Texto: "We established our first contact with the director of a biofertilizer company; to know what he thought of our project, see if he could contact us with some people and if he would allow us to do some sampling in the future.",
+            },
+
+            {
+            Título: "Meeting the future Biotechnology students",
+            Categoría: "Diffusion",
+            Mes: "06",
+            Día: "22",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/6/61/22junio1.jpg/800px-22junio1.jpg",
+            "http://igem.org/wiki/images/9/97/22junio2.jpg",
+            "http://igem.org/wiki/images/4/46/22junio3.jpg"],
+            Texto: "We were invited to talk about our project to the next generation of biotechnology engineering students at our University, ITESM campus Chihuahua. After this we had a little get together in which we socialized with them (and then we went to a bar and Kevin got really drunk).",
+            },
+
+            {
+            Título: "Visit to cultivations: interviews",
+            Categoría: "Human Practices",
+            Mes: "06",
+            Día: "23",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/5/56/23junio1.jpg/800px-23junio1.jpg",
+                    "http://igem.org/wiki/images/a/a3/23junio2.jpg"],
+            Texto: "We went for the first time to visit agricultors that were experiencing problems with their crops (we were interested especially in pudrición texana). They were really eager to help us with our project and our interviews",
+            },
+
+            {
+            Título: "Our kit finally arrived!",
+            Categoría: "iGEM",
+            Mes: "06",
+            Día: "24",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/9/93/24junio1.jpg/800px-24junio1.jpg",
+                    "http://igem.org/wiki/images/thumb/4/49/24junio2.jpg/800px-24junio2.jpg",
+                    "http://igem.org/wiki/images/thumb/f/f3/24junio3.jpg/800px-24junio3.jpg"],
+            Texto: "Our advisor Cynthia informed us about our iGEM kit arrival. We are really excited!",
+            },
+
+            {
+            Título: "Visit to cultivations: sampling",
+            Categoría: "Project",
+            Mes: "06",
+            Día: "24",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/e/ee/24junio4.jpg/800px-24junio4.jpg", 
+                    "http://igem.org/wiki/images/thumb/2/26/24junio5.jpg/800px-24junio5.jpg",
+                    "http://igem.org/wiki/images/9/96/24junio6.jpg"],
+            Texto: "We went on doing sampling and had the opportunity to talk with agricultors, as well as do little interviews",
+            },
+
+            {
+            Título: "Videocall with the Chennai SVCE team",
+            Categoría: "Collaboration",
+            Mes: "06",
+            Día: "27",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/0/07/27junio.jpg/800px-27junio.jpg"], 
+            Texto: "We arranged a meeting via videocall with the Chennai SVCE team, where we discussed in which ways we could collaborate and work together.",
+            },
+
+            {
+            Título: "Visit to cultivations: sampling",
+            Categoría: "Project",
+            Mes: "06",
+            Día: "27",
+            Imagen_principal: ["http://igem.org/wiki/images/9/90/27junio1.jpg",
+                    "http://igem.org/wiki/images/thumb/b/b8/27junio2.jpg/800px-27junio2.jpg",
+                    "http://igem.org/wiki/images/1/17/27junio3.jpg"],
+            Texto: "We visited cultivations to do some sampling. We found that the roots were rotten, as well as a lot of cuscuta in the crop. We also asked some questions related to our project to the agricultors.",
+            },
+
+            {
+            Título: "Official logo",
+            Categoría: "Diffusion",
+            Mes: "06",
+            Día: "28",
+            Imagen_principal: ["http://igem.org/wiki/images/1/11/28junio.jpg"], 
+            Texto: "We finally have a logo! Thanks to Ana Yakari Carrasco Berumen for her beautiful design for our team and project"
+            },
+
+            {
+            Título: "Sampling in the cut",
+            Categoría: "Project",
+            Mes: "06",
+            Día: "29",
+            Imagen_principal: ["http://igem.org/wiki/images/thumb/2/29/29junio.jpg/450px-29junio.jpg", 
+            "http://igem.org/wiki/images/thumb/f/f4/29junioa.jpg/800px-29junioa.jpg"],
+            Texto: "We arrived to a cultivation where Mr. Franco showed us an infected sector with white fungus. We did sampling, and found fungus in the root and stem of the alfafa. We visited another cultivations but only found one kind of infection: cuscuta. We went to the lab and prepared the material for its analysis ",
+            }
+        ]
+
     ],
 
     init: function() {
@@ -243,13 +411,16 @@ calendar = {
             $('#eventModal .modal-title').html(data.Título);   
             $('#imageWrapper > div').addClass('hidden');
             if(data.Imagen_principal.length > 1) {
-                console.log('multiple images');
                 $("#modalSlider .carousel-inner").html('');
+                $("#modalSlider .carousel-indicators").html('');
                 $.each(data.Imagen_principal, function(i, v) {
-                    var d = "<div class='item'><img src='" + v + "'/></div>"
+                    var d = "<div class='item'><div class='slider-img' style='background-image: url(" + v + ");'></div></div>",
+                        indicator = "<li data-target='#modalSlider' data-slide-to='" + i + "'></li>";
                     $("#modalSlider .carousel-inner").append(d);
+                    $('#modalSlider .carousel-indicators').append(indicator);
                 });
                 $("#modalSlider .carousel-inner .item").first().addClass('active');
+                $("#modalSlider .carousel-indicators li").first().addClass('active');
                 $("#modalSlider").carousel("pause").removeData();
                 $("#modalSlider").carousel(0);
                 $('#sliderWrapper').removeClass("hidden");

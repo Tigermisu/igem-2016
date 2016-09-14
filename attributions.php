@@ -6,12 +6,12 @@
     <div class="overlay"></div>
     <div class="gradient-overlay"></div>
     <div class="content">
-        <h1>Team</h1>
+        <h1>Attributions</h1>
     </div>
 </div>
 <div class="std-section">
-    <div class="container">    
-        <p class="attention">Our team consists of students from third to seventh semester, we're all hard-working classmates inside the lab and great friends outside the lab, always united via our common love for science and technology.</p>    
+    <div class="container">
+        <p class="attention">Every team member has done great things to aid in the development of each project, we strive to properly credit each with what they did the most, but simple words are never enough to represent the inmense help they have done for every area.</p>
         <h2>Alumni</h2>
         <div class="row">
             <div class="col-sm-6 team-member">
