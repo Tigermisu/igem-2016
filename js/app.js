@@ -404,13 +404,12 @@ var calendar = {
                 });
                 $("#calendarWrapper").addClass('right');
             }
-            $('#oldCalendar').fadeOut(600);
             setTimeout(function(){
                 $('#calendar').css('overflow', '');
                 $("#calendarWrapper").removeClass('left').removeClass('right');
                 $('#oldCalendar').remove();
                 $('#calendar .calendar-days').removeAttr("style");
-            }, 600);
+            }, 610);
         }
 
     },
