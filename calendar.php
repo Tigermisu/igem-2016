@@ -1,7 +1,7 @@
 <?php include('header.html'); ?>
 <span id="meta" data-this-page="notebook"></span>
     <div class="nav-backdrop"></div>
-    <div class="mini-cover" style="background-image: url(img/notes.jpg)">
+    <div class="mini-cover" style="background-image: url(http://2016.igem.org/wiki/images/1/15/T--Tec-Chihuahua--calendarcover.jpg)">
         <div class="overlay"></div>
         <div class="gradient-overlay"></div>
         <div class="content">
@@ -159,6 +159,35 @@
                     
                 </div>                   
                 <div class="clearfix"></div>     
+            </div>
+            <div class="calendar-legend">
+                <h2>Legend</h2>
+                <ul>
+                    <li>
+                        <img src="http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Meeting.jpg/308px-T--Tec-Chihuahua--Meeting.jpg.png">
+                        <p>Meeting</p>
+                    </li>
+                    <li>
+                        <img src="http://igem.org/wiki/images/thumb/3/3c/T--Tec-Chihuahua--Collaboration.jpg/320px-T--Tec-Chihuahua--Collaboration.jpg.png">
+                        <p>Collaboration</p>
+                    </li>
+                    <li>
+                        <img src="http://igem.org/wiki/images/thumb/2/2d/T--Tec-Chihuahua--ProjectDN.jpg/155px-T--Tec-Chihuahua--ProjectDN.jpg.png">
+                        <p>Project</p>
+                    </li>
+                    <li>
+                        <img src="http://igem.org/wiki/images/thumb/f/f2/T--Tec-Chihuahua--HP.jpg/282px-T--Tec-Chihuahua--HP.jpg.png">
+                        <p>Human Practices</p>
+                    </li>
+                    <li>
+                        <img src="http://igem.org/wiki/images/thumb/0/0f/T--Tec-Chihuahua--Diffusion.jpg/200px-T--Tec-Chihuahua--Diffusion.jpg.png">
+                        <p>Diffusion</p>
+                    </li>
+                    <li>
+                        <img src="http://2016.igem.org/wiki/images/3/30/T--Tec-Chihuahua--igem-small.png">
+                        <p>iGem</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

@@ -28,7 +28,9 @@ $(function() {
     try {
         window.sr = ScrollReveal();
         sr.reveal('.team-member');
-        sr.reveal('.std-section h2');
+        sr.reveal('.std-section > h2');
+        sr.reveal('.calendar');
+        sr.reveal('.calendar-legend');
     } catch(e) {
 
     }
@@ -44,7 +46,7 @@ $(function() {
     
 });
 
-header = {
+var header = {
     init: function() {        
         var $meta = $('#meta'),
             activePage = $meta.data('thisPage');
@@ -134,17 +136,17 @@ header = {
     }
 }
 
-calendar = {
+var calendar = {
     monthNames : ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
         ],
 
     categories: {
-        "Meeting": "http://igem.org/wiki/images/thumb/d/d7/Meeting.jpg/308px-Meeting.jpg.png",
-        "Collaboration": "http://igem.org/wiki/images/thumb/5/54/Collaboration.jpg/320px-Collaboration.jpg.png",
-        "Project": "http://igem.org/wiki/images/thumb/1/14/ProjectDN.jpg/155px-ProjectDN.jpg.png",
-        "Human Practices": "http://igem.org/wiki/images/thumb/c/ce/HP.jpg/282px-HP.jpg.png",
-        "Diffusion": "http://igem.org/wiki/images/thumb/a/ac/Diffusion.jpg/200px-Diffusion.jpg.png",
+        "Meeting": "http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Meeting.jpg/308px-T--Tec-Chihuahua--Meeting.jpg.png",
+        "Collaboration": "http://igem.org/wiki/images/thumb/3/3c/T--Tec-Chihuahua--Collaboration.jpg/320px-T--Tec-Chihuahua--Collaboration.jpg.png",
+        "Project": "http://igem.org/wiki/images/thumb/2/2d/T--Tec-Chihuahua--ProjectDN.jpg/155px-T--Tec-Chihuahua--ProjectDN.jpg.png",
+        "Human Practices": "http://igem.org/wiki/images/thumb/f/f2/T--Tec-Chihuahua--HP.jpg/282px-T--Tec-Chihuahua--HP.jpg.png",
+        "Diffusion": "http://igem.org/wiki/images/thumb/0/0f/T--Tec-Chihuahua--Diffusion.jpg/200px-T--Tec-Chihuahua--Diffusion.jpg.png",
         "iGEM": "http://2016.igem.org/wiki/images/3/30/T--Tec-Chihuahua--igem-small.png"
 
     },

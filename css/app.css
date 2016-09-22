@@ -1,3 +1,13 @@
+@font-face {
+    font-family: avenirfont;
+    src: url(http://igem.org/File:Avenirfont.otf);
+}
+
+@font-face {
+    font-family: kaitifont;
+    src: url(http://igem.org/File:Kaitifont.otf);
+}
+
 body {
     background-color: #fafafa;
 }
@@ -37,6 +47,14 @@ p.attention {
     display: block;
     text-align: center;
     font-size: 24px;
+}
+
+.page-preview {
+    max-width: 70%;
+    max-height: 70vh;
+    height: auto;
+    margin: 100px auto;
+    display: block;
 }
 
 /* BEGIN NAV */
@@ -335,12 +353,32 @@ p.attention {
     font-size: 30px;
 }
 
+.footer ul {
+    color: #fff;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.footer li ul li:before {
+    content: "- "
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
 #bodyContent .section p.small, .section p.small, #bodyContent .footer p.small, .footer p.small {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
 .modal-title {
+    font-family: kaitifont;
     text-align: center;
     font-size: 30px;
 }
@@ -351,6 +389,7 @@ p.attention {
 
 .std-section h2 {
     text-align: center;
+    font-family: kaitifont;
     margin-top: 60px;
     padding-bottom: 10px;
 }
@@ -369,6 +408,7 @@ p.attention {
 }
 
 .team-member {
+    font-family: avenirfont;
     margin-bottom: 30px;
     position: relative;
 }
@@ -538,6 +578,40 @@ p.attention {
 .calendar-header .dropdown ul li:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,0.4);
+}
+
+.calendar-legend {
+    display: block;
+    margin: 30px auto;
+}
+
+.calendar-legend h2 {
+    color: #fff;
+}
+
+.calendar-legend ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+.calendar-legend li {
+    display: inline-block;
+}
+
+.calendar-legend li img, .calendar-legend li p {
+    margin: 0px 5px;
+    display: inline-block;
+    color: #fff;
+}
+
+.calendar-legend li img {
+    max-width: 50px;
+}
+
+.calendar-legend li:not(:last-child):after {
+    content: "-";
+    color: #fff;
+    margin: 0px 20px;
 }
 
 .modal-content {
@@ -769,13 +843,26 @@ p.attention {
 }
 
 @media (max-width: 550px) {
+    .calendar-header .month-name {
+        display: block;
+    }
+
+    .calendar-header .controls {
+        display: block;
+        float: none;
+    }
+
     .calendar-grid {
-        display: inline-block;
-        width: 13%;
-        height: 0;
-        padding-bottom: 20%;
-        border: #bcbcbc solid 1px;
-        margin: -1px;
+        height: 120px;
+    }
+
+    .calendar-legend li {
+        display: block;
+        margin: 20px;
+    }
+
+    .calendar-legend li:not(:last-child):after {
+        content: "";
     }
 }
 

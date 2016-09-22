@@ -2,7 +2,7 @@
 <span id="meta" data-this-page="team"></span>
 
 <div class="nav-backdrop"></div>
-<div class="mini-cover" style="background-image: url(img/team.jpg)">
+<div class="mini-cover" style="background-image: url(http://2016.igem.org/wiki/images/f/ff/T--Tec-Chihuahua--meeting-pic-one.jpg); background-position: 50% 20%;">
     <div class="overlay"></div>
     <div class="gradient-overlay"></div>
     <div class="content">
@@ -21,7 +21,7 @@
                 <div class="col-md-6">
                     <h3>Cd.Ph.D. Cynthia Lorena González Trevizo</h3>
                     <div class="member-description">
-                        <p class="meta">> Cynthia is our primary PI; always making sure we fully understand the protocols, providing us with material and solving any question we have. Her area of expertise is biology (she’s done research with oocytes and embryos), and we can always discuss our ideas with her, to observe its viability.<br>#MissNotebook</p>
+                        <p>> Cynthia is our primary PI; always making sure we fully understand the protocols, providing us with material and solving any question we have. Her area of expertise is biology (she’s done research with oocytes and embryos), and we can always discuss our ideas with her, to observe their viability. #MissNotebook </p>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <div class="col-md-6">
                     <h3>Ph.D. Silvia Lorena Montes Fonseca</h3>
                     <div class="member-description">
-                        <p class="meta">> Lorena is our secondary PI; she’s specialized in nanotechnology. She is the one that cheers us up when we’re feeling down, and encourages us to keep on going with the project. She also helps us understand the protocols and techniques we are not familiar with; and is very pragmatic. If we have a problem, she always goes down to the basics and helps us solve it in the easiest way possible. <br>#TakeItEasy</p>
+                        <p>> Lorena is our secondary PI; she’s specialized in nanotechnology. She is the one that cheers us up when we’re feeling down, and encourages us to keep on going with the project. She also helps us understand the protocols and techniques we are not familiar with; and is very pragmatic. If we have a problem, she always goes down to the basics and helps us solve it in the easiest way possible. #TakeitEasy</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <div class="col-md-6">
                     <h3>M.C. Silvia Ada de Conca</h3>
                     <div class="member-description">
-                        <p class="meta">> Silvia is a specialist in technology law and Intellectual Property. She is our Mentor in the Human Practices area and is always ready to answer to questions, share ideas, discuss and share with us everything she knows!</p>
+                        <p>> Silvia is a specialist in technology law and Intellectual Property. She is our Mentor in the Human Practices area and is always ready to answer to questions, discuss ideas and share with us everything she knows!</p>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 <div class="col-md-6">
                     <h3>M.C. Julio Aguilar</h3>
                     <div class="member-description">
-                        <p class="meta">> Julio is our mentor in the biosensor area, he also is our provider of material for this important element of our project.</p>
+                        <p>> Julio is our mentor in the biosensor area, he also is our provider of material for this important element of our project.</p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                 <div class="col-md-6">
                     <h3>M.C. Héctor Sebastián Rodríguez Ramírez	</h3>
                     <div class="member-description">
-                        <p class="meta">> Professor Sebastian is helping us with the biosensor area, since he’s specialized in mechatronics.</p>
+                        <p>> Professor Sebastian is helping us with the biosensor area, since he’s specialized in mechatronics and mathematical models.</p>
                     </div>
                 </div>
             </div>
