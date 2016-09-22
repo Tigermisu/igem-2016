@@ -11,7 +11,7 @@
 
 
     <div class="std-section blue-bg">
-        <div class="container">
+        <div class="container">         
             <div id="calendar" class="calendar">
                 <div class="calendar-header">
                     <div class="month-name"></div>
@@ -40,125 +40,127 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </div>
                 </div>
-                <div class="calendar-days">
-                    <div class="calendar-row">
-                        <div class="calendar-grid">
-                            <p class="day-number">1</p>
+                <div id="calendarWrapper" class="calendar-wrapper">   
+                    <div class="calendar-days">
+                        <div class="calendar-row">
+                            <div class="calendar-grid">
+                                <p class="day-number">1</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">2</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">3</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">4</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">5</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">6</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">7</p>
+                            </div>
                         </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">2</p>
+                        <div class="calendar-row">
+                            <div class="calendar-grid">
+                                <p class="day-number">1</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">2</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">3</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">4</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">5</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">6</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">7</p>
+                            </div>
                         </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">3</p>
+                        <div class="calendar-row">
+                            <div class="calendar-grid">
+                                <p class="day-number">1</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">2</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">3</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">4</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">5</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">6</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">7</p>
+                            </div>
                         </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">4</p>
+                        <div class="calendar-row">
+                            <div class="calendar-grid">
+                                <p class="day-number">1</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">2</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">3</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">4</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">5</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">6</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">7</p>
+                            </div>
                         </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">5</p>
+                        <div class="calendar-row">
+                            <div class="calendar-grid">
+                                <p class="day-number">1</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">2</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">3</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">4</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">5</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">6</p>
+                            </div>
+                            <div class="calendar-grid">
+                                <p class="day-number">7</p>
+                            </div>
                         </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">6</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">7</p>
-                        </div>
-                    </div>
-                    <div class="calendar-row">
-                        <div class="calendar-grid">
-                            <p class="day-number">1</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">2</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">3</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">4</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">5</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">6</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">7</p>
-                        </div>
-                    </div>
-                    <div class="calendar-row">
-                        <div class="calendar-grid">
-                            <p class="day-number">1</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">2</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">3</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">4</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">5</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">6</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">7</p>
-                        </div>
-                    </div>
-                    <div class="calendar-row">
-                        <div class="calendar-grid">
-                            <p class="day-number">1</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">2</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">3</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">4</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">5</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">6</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">7</p>
-                        </div>
-                    </div>
-                    <div class="calendar-row">
-                        <div class="calendar-grid">
-                            <p class="day-number">1</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">2</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">3</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">4</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">5</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">6</p>
-                        </div>
-                        <div class="calendar-grid">
-                            <p class="day-number">7</p>
-                        </div>
-                    </div>
-                    
-                </div>                   
-                <div class="clearfix"></div>     
+                        
+                    </div>                   
+                    <div class="clearfix"></div>     
+                </div>
             </div>
             <div class="calendar-legend">
                 <h2>Legend</h2>

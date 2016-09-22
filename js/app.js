@@ -351,13 +351,15 @@ var calendar = {
         }
     },
 
-    loadMonth: function(monthNum) {
+    loadMonth: function(monthNum, animate) {
         if(monthNum < 0 || monthNum >= 12) return false;
         var date = new Date(2016, monthNum),
             header = calendar.monthNames[date.getMonth()] + " " + date.getFullYear(),
             firstDay = date.getDay(),
             days = new Date(2016, monthNum+1, 0).getDate(),
-            $calendar = $('#calendar');
+            $calendar = $('#calendar'),
+            prevHtml = $calendar.find('.calendar-days').html(),
+            prevNum = parseInt($calendar.data('currentMonth'));
         $calendar.data('currentMonth', monthNum);
         $calendar.find('.calendar-header .month-name').html(header);
         $calendar.find('#dropdownMonth').html(calendar.monthNames[date.getMonth()] + ' <span class="caret"></span>');
@@ -383,6 +385,34 @@ var calendar = {
             $('.calendar-header .controls .glyphicon').removeClass('disabled')
         }
         calendar.populateMonth(monthNum);
+        if(animate) {
+            $('#calendarWrapper').append('<div class="calendar-days" id="oldCalendar"></div>');
+            $('#oldCalendar').html(prevHtml);
+            $('#calendar').css('overflow', 'hidden');
+            if(monthNum >  prevNum) {
+                $('#calendar .calendar-days:not(#oldCalendar)').css({
+                    position: "absolute",
+                    left: "100%",
+                    width: "100%"
+                });
+                $("#calendarWrapper").addClass('left');
+            } else {
+                $('#calendar .calendar-days:not(#oldCalendar)').css({
+                    position: "absolute",
+                    right: "100%",
+                    width: "100%"
+                });
+                $("#calendarWrapper").addClass('right');
+            }
+            $('#oldCalendar').fadeOut(600);
+            setTimeout(function(){
+                $('#calendar').css('overflow', '');
+                $("#calendarWrapper").removeClass('left').removeClass('right');
+                $('#oldCalendar').remove();
+                $('#calendar .calendar-days').removeAttr("style");
+            }, 600);
+        }
+
     },
 
     populateMonth: function(monthNum) {
@@ -399,12 +429,12 @@ var calendar = {
         $('.calendar-header .controls .glyphicon').click(function(){
             var currentMonth = parseInt($('#calendar').data('currentMonth')),
                 tgtMonth = currentMonth + ($(this).index() == 0? -1:1);
-            calendar.loadMonth(tgtMonth);
+            calendar.loadMonth(tgtMonth, true);
         });
 
         $('.calendar-header .controls .dropdown ul li').click(function(){
             var tgtMonth = $(this).index();
-            calendar.loadMonth(tgtMonth);
+            calendar.loadMonth(tgtMonth, true);
         });
 
         $(document).on('click', '.event img', function() {

@@ -444,6 +444,24 @@ p.attention {
     text-align: center;
 }
 
+.calendar-wrapper {
+    position: relative;
+}
+
+.calendar-wrapper.left {
+    -webkit-transition: transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%);
+}
+
+.calendar-wrapper.right {
+    -webkit-transition: transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: translate(100%);
+    transform: translate(100%);
+}
+
 .calendar {
     display: block;
     margin: 5vh auto;
