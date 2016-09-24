@@ -11,7 +11,36 @@
 
 
     <div class="std-section blue-bg">
-        <div class="container">         
+        <div class="container">       
+            <div class="calendar-legend">
+                <h2>Legend</h2>
+                <ul>
+                    <li data-tooltip="Click this icon in the calendar to see when and what were our meetings about">
+                        <img src="http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Meeting.jpg/308px-T--Tec-Chihuahua--Meeting.jpg.png">
+                        <p>Meeting</p>
+                    </li>
+                    <li data-tooltip="Tec-Chihuahua team had the opportunity to collaborate with a lot of teams. Click the icon on the calendar to find out more!">
+                        <img src="http://igem.org/wiki/images/thumb/3/3c/T--Tec-Chihuahua--Collaboration.jpg/320px-T--Tec-Chihuahua--Collaboration.jpg.png">
+                        <p>Collaboration</p>
+                    </li>
+                    <li data-tooltip="This icon will show you every activity related to the laboratory. Click it in the calendar and learn more about our project">
+                        <img src="http://igem.org/wiki/images/thumb/2/2d/T--Tec-Chihuahua--ProjectDN.jpg/155px-T--Tec-Chihuahua--ProjectDN.jpg.png">
+                        <p>Project</p>
+                    </li>
+                    <li data-tooltip="Not everything is just lab work! Click the Human Practices icon in the calendar to learn about visits to cultivations and sampling">
+                        <img src="http://igem.org/wiki/images/thumb/f/f2/T--Tec-Chihuahua--HP.jpg/282px-T--Tec-Chihuahua--HP.jpg.png">
+                        <p>Human Practices</p>
+                    </li>
+                    <li data-tooltip="It is important making people be curious about Synthetic Biology. Click this icon to learn about spreading the voice!">
+                        <img src="http://igem.org/wiki/images/thumb/0/0f/T--Tec-Chihuahua--Diffusion.jpg/200px-T--Tec-Chihuahua--Diffusion.jpg.png">
+                        <p>Diffusion</p>
+                    </li>
+                    <li data-tooltip="See every activity directly related to iGEM">
+                        <img src="http://2016.igem.org/wiki/images/3/30/T--Tec-Chihuahua--igem-small.png">
+                        <p>iGem</p>
+                    </li>
+                </ul>
+            </div>  
             <div id="calendar" class="calendar">
                 <div class="calendar-header">
                     <div class="month-name"></div>
@@ -161,36 +190,7 @@
                     </div>                   
                     <div class="clearfix"></div>     
                 </div>
-            </div>
-            <div class="calendar-legend">
-                <h2>Legend</h2>
-                <ul>
-                    <li>
-                        <img src="http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Meeting.jpg/308px-T--Tec-Chihuahua--Meeting.jpg.png">
-                        <p>Meeting</p>
-                    </li>
-                    <li>
-                        <img src="http://igem.org/wiki/images/thumb/3/3c/T--Tec-Chihuahua--Collaboration.jpg/320px-T--Tec-Chihuahua--Collaboration.jpg.png">
-                        <p>Collaboration</p>
-                    </li>
-                    <li>
-                        <img src="http://igem.org/wiki/images/thumb/2/2d/T--Tec-Chihuahua--ProjectDN.jpg/155px-T--Tec-Chihuahua--ProjectDN.jpg.png">
-                        <p>Project</p>
-                    </li>
-                    <li>
-                        <img src="http://igem.org/wiki/images/thumb/f/f2/T--Tec-Chihuahua--HP.jpg/282px-T--Tec-Chihuahua--HP.jpg.png">
-                        <p>Human Practices</p>
-                    </li>
-                    <li>
-                        <img src="http://igem.org/wiki/images/thumb/0/0f/T--Tec-Chihuahua--Diffusion.jpg/200px-T--Tec-Chihuahua--Diffusion.jpg.png">
-                        <p>Diffusion</p>
-                    </li>
-                    <li>
-                        <img src="http://2016.igem.org/wiki/images/3/30/T--Tec-Chihuahua--igem-small.png">
-                        <p>iGem</p>
-                    </li>
-                </ul>
-            </div>
+            </div>            
         </div>
     </div>
 

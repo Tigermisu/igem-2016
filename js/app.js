@@ -425,15 +425,30 @@ var calendar = {
     },
 
     setEvents: function() {
-        $('.calendar-header .controls .glyphicon').click(function(){
+        $('.calendar-header .controls .glyphicon').click(function() {
             var currentMonth = parseInt($('#calendar').data('currentMonth')),
                 tgtMonth = currentMonth + ($(this).index() == 0? -1:1);
             calendar.loadMonth(tgtMonth, true);
         });
 
-        $('.calendar-header .controls .dropdown ul li').click(function(){
+        $('.calendar-header .controls .dropdown ul li').click(function() {
             var tgtMonth = $(this).index();
             calendar.loadMonth(tgtMonth, true);
+        });
+
+        $('.calendar-legend li').on('mouseenter click', function() {
+            var $li = $(this);
+            if($li.find('.igemtooltip').length == 0) {
+                $li.append('<div class="igemtooltip"></div>');
+                $li.find('.igemtooltip').html('<p>' + $li.data('tooltip') + '</p>').fadeIn();
+            }
+        });
+
+        $(document).on('mouseleave click', '.igemtooltip', function(e) {
+            var $tooltip = $(this);
+            $tooltip.fadeOut(function(){
+                $tooltip.remove();
+            });
         });
 
         $(document).on('click', '.event img', function() {
