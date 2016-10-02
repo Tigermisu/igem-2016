@@ -1,12 +1,4 @@
-@font-face {
-    font-family: avenirfont;
-    src: url(http://igem.org/File:Avenirfont.otf);
-}
-
-@font-face {
-    font-family: kaitifont;
-    src: url(http://igem.org/File:Kaitifont.otf);
-}
+@import 'https://fonts.googleapis.com/css?family=Lato|Open+Sans';
 
 body {
     background-color: #fafafa;
@@ -42,7 +34,7 @@ body {
     background-color: rgb(7, 135, 148);
 }
 
-p.attention {
+p.attention, #content .std-section p.attention {
     margin: 40px auto;
     display: block;
     text-align: center;
@@ -72,10 +64,9 @@ p.attention {
     margin: 50px 0;
     width: 100%;
     max-height: 300px;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
     padding: 130px 10px;
 }
 
@@ -189,9 +180,8 @@ p.attention {
 .cover {
     z-index: 5;
     display: block;
-    background: url(../img/alfalfa-field.jpg) center center no-repeat;
+    background: url(../img/alfalfa-field.jpg) center 0% no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-color: #333;
     height: 600px;
     max-height: 100vh;
@@ -202,7 +192,7 @@ p.attention {
 .mini-cover {
     z-index: 5;
     display: block;
-    background: url(../img/cover.jpg);
+    background: url(http://2016.igem.org/wiki/images/d/dc/Cover.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -366,10 +356,6 @@ p.attention {
     transform: translate(0, 100%);
 }
 
-.section:not(.fp-auto-height) {
-    height: 100vh;
-}
-
 .section h1 {
     color: #fff;
     text-align: center;
@@ -408,7 +394,7 @@ p.attention {
 }
 
 .modal-title {
-    font-family: kaitifont;
+    font-family: 'Open Sans', sans-serif;;
     text-align: center;
     font-size: 30px;
 }
@@ -419,7 +405,7 @@ p.attention {
 
 .std-section h2 {
     text-align: center;
-    font-family: kaitifont;
+    font-family: 'Open Sans', sans-serif;;
     margin-top: 60px;
     padding-bottom: 10px;
 }
@@ -438,7 +424,7 @@ p.attention {
 }
 
 .team-member {
-    font-family: avenirfont;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 30px;
     position: relative;
 }
@@ -509,6 +495,11 @@ p.attention {
     float: right;
 }
 
+.calendar .event p {
+    font-size: 8px;
+    text-align: left;
+}
+
 .calendar-header .controls span {
     -webkit-user-select: none;
     user-select: none;
@@ -537,6 +528,11 @@ p.attention {
 
 .calendar-header .controls span:active:not(.disabled) {
     color: #ccc;
+}
+
+.calendar-grid.has-event {
+    background-color: #006400;
+    cursor: pointer;
 }
 
 
@@ -647,7 +643,7 @@ p.attention {
     display: inline-block;
 }
 
-.calendar-legend li .igemtooltip {
+.calendar-legend li .igemtooltip, .calendar-grid .igemtooltip {
     color: #333;
     position: absolute;
     top: 0;
@@ -656,9 +652,10 @@ p.attention {
     background-color: #fff;
     border: #bcbcbc solid 1px;
     display: none;
+    z-index: 50;
 }
 
-.calendar-legend li .igemtooltip p {
+.calendar-legend li .igemtooltip p, .calendar-grid .igemtooltip p {
     color: #333;
 }
 
@@ -806,6 +803,7 @@ p.attention {
         -webkit-transition: transform 0.3s;
         -moz-transition: transform 0.3s;
         transition: transform 0.3s;
+        padding-top: 14px;
     }
 
     .main-nav.open .options-wrapper {        
@@ -907,6 +905,11 @@ p.attention {
 }
 
 @media (max-width: 550px) {
+    .parallax {
+        max-height: 200px;
+        padding: 45px 10px;
+    }
+
     .calendar-header .month-name {
         display: block;
     }

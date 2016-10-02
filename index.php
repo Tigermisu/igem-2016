@@ -3,7 +3,7 @@
 
 <div id="fullpage">
     <div class="section fp-auto-height" data-anchor="home">
-            <div class="cover">
+            <div class="cover" data-parallax="">
             <div class="overlay"></div>
             <div class="gradient-overlay"></div>
             <div class="content">

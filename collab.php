@@ -35,7 +35,7 @@
         <p><strong>EPF Laussane.- </strong> We sent a summary about our team and Project and they made us an interview, all for their wonderful blog which can be found here: <a href="http://igem.today/">http://igem.today/</a></p>
         <p><strong>XMU China.- </strong>We were happy to send our contribution to their Newsletter.</p>
     </div>
-    <div class="parallax" style="background-image: url(http://igem.org/wiki/images/0/07/MeetupGto.jpg)">
+    <div class="parallax" data-parallax="bottom" style="background-image: url(http://igem.org/wiki/images/0/07/MeetupGto.jpg)">
         <p>Guanajuato Meet-up</p>
     </div>
     <div class="container">    

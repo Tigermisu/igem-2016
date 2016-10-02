@@ -2,8 +2,25 @@
     display: none;
 }
 
+#sideMenu {
+    display: none;
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+#globalWrapper {
+    padding-bottom: 0 !important;
+}
+
 #globalWrapper #top_menu_under {
     height: 14px;
+}
+
+h1 {
+    border-bottom: none !important;
+    font-weight: 400 !important;
 }
 
 #globalWrapper #content {
