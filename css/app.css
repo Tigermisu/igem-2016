@@ -180,7 +180,7 @@ p.attention, #content .std-section p.attention {
 .cover {
     z-index: 5;
     display: block;
-    background: url(../img/alfalfa-field.jpg) center 0% no-repeat;
+    background: url(http://2016.igem.org/wiki/images/a/a8/T--Tec-Chihuahua--newcover.jpg) center 0% no-repeat;
     background-size: cover;
     background-color: #333;
     height: 600px;
@@ -360,6 +360,34 @@ p.attention, #content .std-section p.attention {
     color: #fff;
     text-align: center;
     margin: 0;
+}
+
+.sorted {
+    display: block;
+}
+
+.sorted div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 49%;
+}
+
+.sorted .left {
+    float: left;
+    width: 50%;
+}
+
+.sorted .right {
+    float: right;
+    width: 50%;
+}
+
+.sorted img {
+    display: inline-block;
+    max-height: 30vh;
+    width: auto;
+    margin: 10px auto;
 }
 
 #bodyContent .section p, .section p, #bodyContent .footer p, .footer p {
@@ -949,6 +977,22 @@ p.attention, #content .std-section p.attention {
     .slide-menu li a {
         padding: 4px 8px;
         font-size: 10px;
+    }
+
+    .section .sorted > div:not(.grow) {
+        width: 24%;
+    }
+
+    .section .sorted .grow {
+        width: 74%;
+    }
+
+    #bodyContent .section p, .section p {
+        font-size: 14px;
+    }
+
+    #bodyContent .section p.small, .section p.small {
+        font-size: 12px;
     }
 }
 

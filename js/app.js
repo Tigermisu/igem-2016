@@ -601,6 +601,280 @@ var calendar = {
 
         ],
 
+        //agosto
+
+        [{
+                Título: "India conference via Google Hangouts",
+                Categoría: "Collaboration",
+                Mes: "08",
+                Día: "1",
+                Texto: "Today we spoke once again with the SVCE Chennai Team to collaborate and share our advances",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/8/85/T--Tec-Chihuahua--1agosto.jpg/800px-T--Tec-Chihuahua--1agosto.jpg"]
+            },
+
+            {
+                Text: "- Resuspension of BioBricks to be used on the Project<br>- Transformation with OneShot Mach™  cells",
+                Mes: "08",
+                Día: "2",
+            },
+
+            {
+                Text: "- Preparation of Chloramphenicol stock (35mg/mL)<br>- Fungi reseeding on PDA agar and lactophenol cotton blue staining for microscopic observation",
+                Mes: "08",
+                Día: "3",
+            },
+
+            {
+                Título: "Guanajuato Meet-up: Biología Sintética en México",
+                Categoría: "Collaboration",
+                Mes: "08",
+                Día: "5",
+                Texto: "We had the opportunity to attend the Meet-up  “Biología Sintética en México” organized by the Guanajuato Mx team.We presented our project and were able to listen to the projects of other Mexico teams, such as Pumas Mexico, Tec - CEM and Tec - Monterrey. We also got to know  the city by visiting some representative tourist places.",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/8/81/T--Tec-Chihuahua--5agosto1.jpg/800px-T--Tec-Chihuahua--5agosto1.jpg", "http://igem.org/wiki/images/thumb/c/c9/T--Tec-Chihuahua--5agosto2.jpg/800px-T--Tec-Chihuahua--5agosto2.jpg", "http://igem.org/wiki/images/thumb/c/c6/T--Tec-Chihuahua--5agosto3.jpg/800px-T--Tec-Chihuahua--5agosto3.jpg", "http://igem.org/wiki/images/c/c7/T--Tec-Chihuahua--5agosto4.jpg"]
+            },
+
+            {
+                Text: "- Transformation of BioBrick 8 of the project",
+                Mes: "08",
+                Día: "9",
+            },
+
+            {
+                Text: "- Competent cells protocol",
+                Mes: "08",
+                Día: "12",
+            },
+
+            {
+                Text: "- Plasmid DNA extraction",
+                Mes: "08",
+                Día: "16",
+            },
+
+            {
+                Text: "- 3A Assembly (1)",
+                Mes: "08",
+                Día: "18",
+            },
+
+            {
+                Título: "General Meeting with Drs.",
+                Categoría: "Meeting",
+                Mes: "08",
+                Día: "18",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/3/39/19agosto.jpg/800px-19agosto.jpg"],
+                Texto: "We had a meeting to report our advances so far with our main advisors",
+            },
+
+            {
+                Título: "Switzerland EPFL Conference via Skype",
+                Categoría: "Collaboration",
+                Mes: "08",
+                Día: "18",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/a/a8/T--Tec-Chihuahua--18agosto.jpg/800px-T--Tec-Chihuahua--18agosto.jpg"],
+                Texto: "",
+            },
+
+            {
+                Text: "- Repetition of 3A Assembly",
+                Mes: "08",
+                Día: "19",
+            },
+
+            {
+                Título: "Westminster conference via Skype",
+                Categoría: "Collaboration",
+                Mes: "08",
+                Día: "19",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/3/39/19agosto.jpg/800px-19agosto.jpg"],
+                Texto: "",
+            },
+
+
+
+            {
+                Text: "- Competent cells protocol<br>- Transformation using assembles",
+                Mes: "08",
+                Día: "22",
+            },
+
+            {
+                Text: "- Reseeding of Transformed assembled cells ",
+                Mes: "08",
+                Día: "23",
+            },
+
+            {
+                Título: "Welcoming the new generation of Biotechnology students",
+                Categoría: "Diffusion",
+                Mes: "08",
+                Día: "24",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/4/45/T--Tec-Chihuahua--24agosto.jpg/800px-T--Tec-Chihuahua--24agosto.jpg"],
+                Texto: "The iGEM team had the honor of delivering lab coats to some of the new biotechnology students. Welcome to this new generation of Biotechnologists!"
+            },
+
+            {
+                Título: "Interlab attempt",
+                Categoría: "iGEM",
+                Mes: "08",
+                Día: "24",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/1/1a/T--Tec-Chihuahua--24agostoa.jpg/450px-T--Tec-Chihuahua--24agostoa.jpg"],
+                Texto: "We begun to work on the Interlab by transforming with the kit sent by iGEM. Unfortunately, we couldn’t succesfully carry out the experiment, it appears the pack with the DNA wasn’t properly sealed when sent :("
+            },
+
+            {
+                Text: "- 3A Assembly",
+                Mes: "08",
+                Día: "29",
+            },
+
+            {
+                Text: "- Agarose gel electrophoresis",
+                Mes: "08",
+                Día: "30",
+            },
+
+        ],
+
+        //September
+
+        [{
+                Text: "- 3A Assembly<br>- Competent cells protocol<br>- Transformation of First 3A",
+                Mes: "09",
+                Día: "1",
+            },
+
+            {
+                Título: "Burger Day",
+                Categoría: "Diffusion",
+                Mes: "09",
+                Día: "3",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/7/74/T--Tec-Chihuahua--3sept1.jpg/800px-T--Tec-Chihuahua--3sept1.jpg", "http://igem.org/wiki/images/thumb/6/6f/T--Tec-Chihuahua--3sept2.jpg/800px-T--Tec-Chihuahua--3sept2.jpg", "http://igem.org/wiki/images/thumb/9/99/T--Tec-Chihuahua--3sept3.jpg/800px-T--Tec-Chihuahua--3sept3.jpg", "http://igem.org/wiki/images/thumb/1/1b/T--Tec-Chihuahua--3sept4.jpg/800px-T--Tec-Chihuahua--3sept4.jpg", "http://igem.org/wiki/images/thumb/1/17/T--Tec-Chihuahua--3sept5.jpg/450px-T--Tec-Chihuahua--3sept5.jpg", "http://igem.org/wiki/images/6/6e/T--Tec-Chihuahua--3sept6.jpg"],
+                Texto: "We set-up a burger day in order to raise some funds. Long and tiring day, but fun… Hey, put some more charcoal on the grill, we are not finished!",
+            },
+
+
+            {
+                Text: "- Competent cells protocol",
+                Mes: "09",
+                Día: "5",
+            },
+
+            {
+                Título: "Arrival of competent cells",
+                Categoría: "Project",
+                Mes: "09",
+                Día: "8",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/9/96/T--Tec-Chihuahua--8septiembre.jpg/800px-T--Tec-Chihuahua--8septiembre.jpg"],
+                Texto: "We have new material to work with! And also some dry ice to play with… (note Armando’s face of fun and satisfaction)",
+            },
+
+            {
+                Text: "- Agarose gel electrophoresis",
+                Mes: "09",
+                Día: "8",
+            },
+
+            {
+                Text: "- Clones Selection",
+                Mes: "09",
+                Día: "9",
+            },
+
+            {
+                Text: "- Preparation of LB + Chloramphenicol Agar",
+                Mes: "09",
+                Día: "13",
+            },
+
+            {
+                Text: "- Preparation of LB + Ampicillin Agar<br>- Preparation of MiniPrep solutions<br>- Transformation of competent cells",
+                Mes: "09",
+                Día: "14",
+            },
+
+            {
+                Text: "- Competent cells protocol<br>- Transformation of competent cells",
+                Mes: "09",
+                Día: "16",
+            },
+
+            {
+                Text: "- Reseeding of transformed cells to LB broth",
+                Mes: "09",
+                Día: "17",
+            },
+
+            {
+                Text: "- Competent cells protocol<br>- DNA Plasmid extraction by Alkaline lysis<br>- Plasmid quantification on NanoDrop2000<br>- Resuspension of bricks<br>- Transformation of competent cells",
+                Mes: "09",
+                Día: "18",
+            },
+
+            {
+                Text: "- Agarose gel electrophoresis",
+                Mes: "09",
+                Día: "20",
+            },
+
+            {
+                Text: "- DNA Plasmid extraction by Alkaline lysis",
+                Mes: "09",
+                Día: "23",
+            },
+
+            {
+                Text: "- Preparation of Kanamycin stock (25mg/mL)<br>- Preparation of Chloramphenicol stock",
+                Mes: "09",
+                Día: "24",
+            },
+
+            {
+                Text: "- Reseeding of transformed cells",
+                Mes: "09",
+                Día: "25",
+            },
+
+            {
+                Text: "- DNA Plasmid extraction",
+                Mes: "09",
+                Día: "26",
+            },
+
+            {
+                Text: "- Competent cells protocol",
+                Mes: "09",
+                Día: "27",
+            },
+
+            {
+                Text: "- Transformation of competent cells ",
+                Mes: "09",
+                Día: "28",
+            },
+
+            {
+                Text: "- Reseeding of transformed cells on LB broth ",
+                Mes: "09",
+                Día: "29",
+            },
+
+            {
+                Text: "- Competent cells protocol<br>- Transformation of competent cells<br>- DNA plasmid extraction",
+                Mes: "09",
+                Día: "30",
+            },
+
+        ],
+
+        [
+            {
+                Text: "- Team video planning<br>- Reseeding of transformed cells",
+                Mes: "10",
+                Día: "1",
+            },
+        ]
+
     ],
 
     init: function() {
@@ -675,15 +949,16 @@ var calendar = {
     },
 
     populateMonth: function(monthNum) {
-        var $grids = $('div.calendar-grid');
+        var $grids = $('#calendar div.calendar-grid');
+        $grids.removeClass('has-event');
         $.each(calendar.data[monthNum], function(i, v) {
             var $day = $grids.find('[data-day=' + v.Día + ']').first().parent();
             if ($day.find('.event').length == 0) $day.prepend("<div class='event'></div>");
-            if(typeof(v.Text) == "undefined") {
+            if (typeof(v.Text) == "undefined") {
                 $day.find('.event').append("<img src='" + calendar.categories[v.Categoría] + "'/>");
                 $day.find('.event img').last().data('key', monthNum + '-' + i);
             } else {
-                if(!$day.hasClass('has-event')) {
+                if (!$day.hasClass('has-event')) {
                     $day.addClass('has-event');
                     $day.append('<div class="igemtooltip"></div>');
                 }
@@ -715,7 +990,7 @@ var calendar = {
         $(document).on('mouseleave click', '.igemtooltip', function(e) {
             var $tooltip = $(this);
             $tooltip.fadeOut(function() {
-                if($(this).closest('.calendar-grid').length == 0) $tooltip.remove();
+                if ($(this).closest('.calendar-grid').length == 0) $tooltip.remove();
             });
         });
 
@@ -723,7 +998,8 @@ var calendar = {
             var $tooltip = $(this).find('.igemtooltip').fadeIn();
         });
 
-        $(document).on('click', '.event img', function() {
+        $(document).on('click', '.event img', function(e) {
+            e.stopPropagation();
             var key = $(this).data('key').split('-'),
                 data = calendar.data[key[0]][key[1]];
             $('#eventModal .modal-title').html(data.Título);
