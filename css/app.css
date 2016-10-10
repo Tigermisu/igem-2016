@@ -488,6 +488,20 @@ p.attention, #content .std-section p.attention {
     text-align: center;
 }
 
+.section p a {
+    color: #ddd;
+}
+
+.section p a:hover, .section p a:visited, .section p a:active {
+    color: #eee;
+    border-bottom: #eee solid 1px;
+    text-decoration: none;
+}
+
+ .section p a:visited, .section p a:active {
+     border-bottom: none;
+ }
+
 .calendar-wrapper {
     position: relative;
 }
