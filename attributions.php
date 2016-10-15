@@ -10,228 +10,189 @@
     </div>
 </div>
 <div class="std-section">
-    <div class="container">
+    <div class="container">        
+        <h2>External Support</h2>
+        <p class="attention">Thanks to everyone who supported us and believed in our project! Without you we wouldn’t have been able to continue!</p>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Collaboration</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ana Yakari Carrasco Berumen</td>
+                            <td>Official logo</td>
+                        </tr>
+                        <tr>
+                            <td>Marte Graphic Services<br>
+Alberto Alonso Ortega Chávez<br>
+Graphic Designer<br><br>
+
+Karen Susana Sánchez Romero<br>
+Illustrator</td>
+                            <td>All the fun illustrations you see in this wiki were made by the talented Karen and Alberto. Thank you both very much!<br><br>
+To see more of their work visit:<br>
+<a href="https://www.facebook.com/Marte-1417497568266288/?fref=ts">Facebook</a><br>
+<a href="https://www.instagram.com/estudiomartechih/">Instagram</a></td>
+                        </tr>
+                        <tr>
+                            <td>Productora 206<br>
+Salma Valverde<br>
+Guillermo López<br>
+Alejandra Acosta<br>
+José Luis Royo<br>
+Alexa Montez<br></td>
+                            <td>Productora 206 took pictures of us in some events and they are simply gorgeous. They would be the perfect paparazzis. <br><br>
+
+This talented guys also helped us on the shooting and edition of our amazing video. 
+Thank you all very much!</td>
+                        </tr>
+                        <tr>
+                            <td>Augusto Azzolini</td>
+                            <td>Translator</td>
+                        </tr>
+                        <tr>
+                            <td>Saúl Fernando Pizarro</td>
+                            <td>Saúl is part of the iGEM’s Latin American Committee and was an important guide for our team at the beggining of the project. You are a great leader, thanks for your valuable advise!</td>
+                        </tr>
+                        <tr>
+                            <td>René Meléndez</td>
+                            <td>René helped us in the lab in some of his free time, and supported us with training on some protocols</td>
+                        </tr>
+                        <tr>
+                            <td>Antonio Alejandro Flores Quintanilla<br>Daniel Estrada Ortega</td>
+                            <td>They helped us on the Banner Design (and it turned out amazing!)</td>
+                        </tr>
+                        <tr>
+                            <td>SAIBT</td>
+                            <td>The Student Society of Biotechnology provided us economical support for some of our activities, and helped us in the organization of our Diffusion Event</td>
+                        </tr>
+                        <tr>
+                            <td>M.C. Julio Aguilar</td>
+                            <td>Julio helped us on an event of a Laptop raffle, as well as mentoring in the biosensor design</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. José Carlos Espinoza Hicks</td>
+                            <td>Dr. Hicks provided us important contacts and helped us on solving some doubts concerning lab work and experimental design</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Javier Zavala<br>Ing. Rosario Peralta</td>
+                            <td>Both Dr. Zavala and Ing. Peralta helped us on Modeling our project</td>
+                        </tr>
+                        <tr>
+                            <td>Interviewed agricultors</td>
+                            <td>Agricultors provided us with knowledge and contacts but most important, they took the time to listen about our project. To every person that agreed to be interviewed and taught us so much about the agricultural sector: Thanks for all your support and availability! </td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://igem.org/wiki/images/thumb/d/df/Snapgene.jpg/320px-Snapgene.jpg.png" class="img-responsive"></td>
+                            <td>SnapGene software was available for Tec-Chihuahua to model our project. Thanks to Snap Gene Team!</td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://igem.org/wiki/images/4/41/IDT.jpg" class="img-responsive"></td>
+                            <td>IDT kindly synthethyzed for us the CDS for Photoliase A, which couldn't use after all. We still are very thankful for their support!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        <h2>Our Work</h2>
         <p class="attention">Every team member has done great things to aid in the development of each project, we strive to properly credit each with what they did the most, but simple words are never enough to represent the inmense help they have done for every area.</p>
-        <h2></h2>
         <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/b/b3/Abraham.jpeg/299px-Abraham.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Abraham</h3>
-                    <div class="member-description">
-                    <p>> Abraham is a good leader, always active and our direct contact with the Drs. He always has some hip-hop fire for the lab, and communicates us the most urgent matters. #Dab #Flex #TurnUp #HotFayah #Gangsta</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/9/9e/AnaVic.jpeg/251px-AnaVic.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Ana Vic</h3>
-                    <div class="member-description">
-                        <p>> Anita is the kind person who is always willing to help and wants to do things the right way. She always comes up with great ideas and is also the leader of the Human Practices team, working in the Ethical part. #AlwaysSmile</p>
-                    </div>
-                </div>
+            <div class="col-xs-6 col-lg-4">
+                <p class="strong">Wet Lab</p>
+                <ul>
+                    <li>David González</li>
+                    <li>Giselle Flores</li>
+                    <li>Armando Palacions</li>
+                    <li>Mara Valverde</li>
+                    <li>Manuel Lerma</li>
+                    <li>Abraham López</li>
+                    <li>Kendra Corral</li>
+                    <li>Dana Gómez</li>
+                    <li>Kevin Terán</li>
+                    <li>Joel Hernández</li>
+                    <li>Andrea Acevedo</li>
+                    <li>Ricardo Valles</li>
+                    <li>Iriana Serna</li>
+                    <li>Ana Victoria Gutiérrez</li>
+                </ul>
+                <p class="strong">Human Practices</p>
+                <ul>
+                    <li>Ana Victoria Gutiérrez</li>
+                    <li>Kendra Corral</li>
+                    <li>Joel Hernández</li>
+                    <li>Andrea Acevedo</li>
+                    <li>Susana Doen</li>
+                    <li>Francisco del Olmo</li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-lg-4">
+                <p class="strong">Wiki</p>
+                <ul>
+                    <li>Chris Jáquez</li>
+                    <li>Kendra Corral</li>
+                    <li>Dana Gómez</li>
+                    <li>Giselle Flores</li>
+                    <li>Mara Valverde</li>
+                </ul>
+                <p class="strong">Biosensor</p>
+                <ul>
+                    <li>Luis Rojas</li>
+                    <li>David González</li>
+                    <li>Chris Jáquez</li>
+                </ul>
+                <p class="strong">Parts</p>
+                <ul>
+                    <li>Mara Valverde</li>
+                    <li>Armando Palacios</li>
+                    <li>Ana Victoria Gutiérrez</li>
+                </ul>
+                <p class="strong">Safety</p>
+                <ul>
+                    <li>Ana Victoria Gutiérrez</li>
+                    <li>Kendra Corral</li>
+                    <li>Giselle Flores</li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-lg-4">
+                <p class="strong">Modelling</p>
+                <ul>
+                    <li>Mara Valverde</li>
+                </ul>
+                <p class="strong">Collaboration</p>
+                <ul>
+                    <li>Dana Gómez</li>
+                    <li>Mara Valverde</li>
+                </ul>
+                <p class="strong">Secretariat</p>
+                <ul>
+                    <li>Dana Gómez</li>
+                    <li>Kendra Corral</li>
+                    <li>Ricardo Valles</li>
+                </ul>
+                <p class="strong">Social Media</p>
+                <ul>
+                    <li>Mara Valverde</li>
+                    <li>Andrea Acevedo</li>
+                </ul>
+                <p class="strong">Poster</p>
+                <ul>
+                    <li>Carla Jasso</li>
+                </ul>
+                <p class="strong">Presentation</p>
+                <p>To be disclosed.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/b/b5/Andrea.jpeg/384px-Andrea.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Andrea</h3>
-                    <div class="member-description">
-                        <p>> Andrea is a member of the division of Human Practices (in the Economics part), the winner of the #HotFingazz contest ;) and also a #NotebookMaster. Andrea is also in charge of our Facebook page #FBWizard</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/9/9b/Armando.jpeg/422px-Armando.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Armando</h3>
-                    <div class="member-description">
-                        <p>> Armando is the fun member of the team, keeping the flow with Philly (our speaker) and electroswing. He is part of the Biobrick division, as well as one of the most hard working members #IronRelative #Zukistrukis</p>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/9/9c/ChrisJa.jpeg/425px-ChrisJa.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Chris</h3>
-                    <div class="member-description">
-                        <p>> Chris is the #WikiMaster. He’s a programmer genius and is always willing to share ideas, contribute and is naturally curious of any topic (but specially concerning NASA stuff). Our awesome wiki wouldn’t exist if it wasn’t because of him!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/d/d6/Dana.jpeg/417px-Dana.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Dana</h3>
-                    <div class="member-description">
-                        <p>> Dana always looks for something to help with, is a key member on the Biobrick division (and team in general) and is also one of the #NotebookMasters and secretary of the team. She is also a #CollabCharmer
- #LostWithoutYou #NanoDanita #YellowBote</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/e/e5/David.jpeg/406px-David.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>David</h3>
-                    <div class="member-description">
-                        <p>> David always searches for something to help with, learns quickly and when he’s not doing lab work, is playing #Gamer #DancingAppleMan #Hippie</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/8/80/Francisco.jpeg/442px-Francisco.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Francisco</h3>
-                    <div class="member-description">
-                        <p>> Francisco is a law student in 5th semester, and supports the Human Practices area in the Ethics part. He likes soccer and traveling.</p>
-                    </div>
-                </div>
-            </div>        
-        </div>
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/6/69/GG.jpeg/400px-GG.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Gigi</h3>
-                    <div class="member-description">
-                        <p>> Gigi is tiny, always alert and part of the Biobrick division: a fast-learning and hard working member. Gigi is always on time when it comes to eating (she loves chilaquiles and chicharron prensado). And her laugh is way too contagious #Microgigi  #𝞵GG #Tlacuache</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/9/98/Iriana.jpeg/356px-Iriana.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Iriana</h3>
-                    <div class="member-description">
-                        <p>> Iriana is the member on charge of the #PendingMatters, always willing to fight (not seriously tho) and the #MasterofActivities when it comes to funding #Iguana #Team´s mom #StabAttack #Shaka #Ferias</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/d/d1/Joel.jpeg/407px-Joel.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Joel</h3>
-                    <div class="member-description">
-                        <p>> Joel is part of the Human Practices division (in the Legal part), always ready to party and good at questioning if the procedures are all right. He is also a key member on our field trips.
-#UncontrollableLaughter #WaitASecond #Whitey #cuxe </p>
-                    </div>
-                </div>
-            </div>   
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/4/4b/Kendra.jpeg/423px-Kendra.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Kendra</h3>
-                    <div class="member-description">
-                    <p>> Kendra is essential for the team (She does hundreds of things)  as well as secretary of the team. She is part of the Human practices division in the Ethics part  and another #NotebookMaster. Kendra is also the #Co-WikiMaster working along to design and upload material in our page  #Weloveyou</p>
-                    </div>
-                </div>
-            </div> 
-        </div>
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/4/48/Kevin.jpeg/376px-Kevin.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Kevin</h3>
-                    <div class="member-description">
-                        <p>> Kevin’s presence in the lab is essential because by being one of the older iGEM members, he taught the younger ones about basic and advanced procedures in the lab #FirstMentor #Goatman</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/5/59/LuisRo.jpeg/437px-LuisRo.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Luis</h3>
-                    <div class="member-description">
-                        <p>> Luis is studying mechatronics, in 7th semester now. He supports us in the technological aspect of the project. He loves science, politics and history and is a really interesting person to talk with.</p>
-                    </div>
-                </div>
-            </div>   
-        </div>
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/e/ed/Manuel.jpeg/407px-Manuel.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Manuel</h3>
-                    <div class="member-description">
-                    <p>> Meny is the quietest member of the team. He’s always ready to laugh or do research (whatever the case) and teaches everything he knows to the younger members of the team. #Don’tTalkBeAwesome #Whereis M…?Oh there you are:) #JustExisting</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/5/58/MaraVal.jpeg/407px-MaraVal.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Mara</h3>
-                    <div class="member-description">
-                        <p>> Mara is the #BioPartMaster, always fun and sometimes quiet. She is always eager to work in the lab and very thoughtful about the project at any time. She is also our #TwitterWizard, one of our main contacts with other teams and also a #CollabCharmer</p>
-                    </div>
-                </div>
-            </div>     
-        </div>    
-        <div class="row">
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/f/f8/Ricardo.jpeg/440px-Ricardo.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Ricardo</h3>
-                    <div class="member-description">
-                    <p>> Ricardo is the second in command, always attentive to the needs and priorities of the team. We call him #Venezuela, because he’s the only foreign member on the team (he has introduced us to a lot of weird words) #CamburMan #Vaguada #Macundal #Cotufa #QuanticArepa</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 team-member">
-                <div class="col-md-6">
-                    <img src="http://igem.org/wiki/images/thumb/0/09/Susy.jpeg/381px-Susy.jpeg" class="img-responsive" alt="Team Member's Photo">
-                </div>
-                <div class="col-md-6">
-                    <h3>Susana</h3>
-                    <div class="member-description">
-                        <p>> Susana is currently studying her 7th semester in law, and she is awesome! She is part of the Human Practices area, supporting us in the Legal part. She’s collaborated with important personalities in her exchange program at Yale, and is a responsible and social young woman. Quiet but eager to talk her mind, Susy is a great element of the team!</p>
-                    </div>
-                </div>
-            </div>       
-        </div>         
+
+
+
+
+                
     </div>
 </div>
 
-<?php include('footer.html'); ?>
+<div class="margin"></div>
+
+<?php include('footer.php'); ?>

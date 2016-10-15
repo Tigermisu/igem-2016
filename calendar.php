@@ -214,9 +214,9 @@
                         <div id="mainImage" class="hidden"></div>
                         <div id="sliderWrapper" class="hidden">
                             <div id="modalSlider" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
+                                <omgigemstopaddingdefaultstylestohtmltags class="carousel-indicators">
                                 
-                                </ol>
+                                </omgigemstopaddingdefaultstylestohtmltags>
                                 <div class="carousel-inner" role="listbox">
                                 
                                 </div>

@@ -17,9 +17,12 @@
                     <a href="http://2016.igem.org/Team:Virginia/Collaborations" target="_blank"></a>
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-8">
                 <div class="margin hidden-sm">&nbsp;</div>
                 <p class="attention">We had the awesome opportunity to communicate and collaborate with many teams while working in our project.</p>
+            </div>
+            <div class="col-md-2">
+                <img class="img-responsive" src="http://igem.org/wiki/images/thumb/2/20/T--Tec-Chihuahua--EPFLCollab.jpg/800px-T--Tec-Chihuahua--EPFLCollab.jpg.png" style="margin-top: 65px;" />
             </div>
         </div>  
         
@@ -39,7 +42,7 @@
         <p>Guanajuato Meet-up</p>
     </div>
     <div class="container">    
-        <p class="attention">We had the awesome opportunity to communicate and collaborate with many teams while working in our project.</p>
+        <p class="attention">A big thank you to every team for making this experience so enriching and rewarding! The help of each one of you meant the world for us.</p>
         <h2 class="margin"></h2>
         <p class="attention">“A journey is best measured in friends rather than miles” - Tim Cahill</p> 
     <img src="http://igem.org/wiki/images/3/3c/T--Tec-Chihuahua--Collaboration.jpg" class="page-ender">       

@@ -781,7 +781,7 @@ p.attention, #content .std-section p.attention {
     bottom: 5%;
 }
 
-#modalSlider .carousel-inner:after {
+#modalSlider .carousel-inner:not(.no-after):after {
     content: "";
     position: absolute;
     height: 20%;
@@ -792,6 +792,57 @@ p.attention, #content .std-section p.attention {
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+#modalSlider .carousel-inner.no-after .carousel-control {
+    opacity: 0.3;
+}
+
+#modalSlider .carousel-indicators.left {
+    bottom: initial;
+    top: 50%;
+    left: 0;
+    margin-left: 0;
+}
+
+#modalSlider .carousel-indicators.left li {
+    display: block;
+}
+
+#bodyContent p.strong, p.strong {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.std-section ul {
+    padding-left: 30px;
+}
+
+.std-section li {
+    font-size: 16px;
+    list-style: initial;
+}
+
+.std-section td, .std-section th {
+    font-size: 16px;
+}
+
+.social-media {
+    text-align: center;
+    display: block;
+}
+
+.social-media img {
+    display: inline-block;
+    margin: 20px 5px;
+    transition: all 0.3s;
+    border-radius: 50%;
+    max-width: 50px;
+    cursor: pointer;
+}
+
+.social-media img:hover {
+    background-color: #3399cc;
 }
 
 @media (max-width: 767px) {

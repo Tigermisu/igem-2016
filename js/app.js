@@ -1,3 +1,5 @@
+var slideTimeout;
+
 $(function() {
     header.init();
     calendar.init();
@@ -7,7 +9,7 @@ $(function() {
             scrollBar: true,
             menu: '#slideMenu',
             onLeave: function(index, nextIndex, direction) {
-                if (nextIndex == $('.section').length || nextIndex == 1) {
+                if (nextIndex == $('#fullpage .section').length || nextIndex == 1) {
                     $('.slide-menu').removeClass('show');
                     if (nextIndex == 1) {
                         $('#upArrow').addClass('nope');
@@ -17,8 +19,22 @@ $(function() {
                     }
                 } else {
                     $('.slide-menu').addClass('show');
+                    $('.slide-menu li').animate({
+                        opacity: 1
+                    }, 400);
                     $('.control-arrows span').removeClass('nope');
                     $('#upArrow').removeClass('go-down');
+                    clearTimeout(slideTimeout);
+                    slideTimeout = setTimeout(function() {
+                        $('.slide-menu li').animate({
+                            opacity: 0
+                        }, 1200);
+                        $('.slide-menu').one("mouseenter", function() {
+                            $('.slide-menu li').animate({
+                                opacity: 1
+                            }, 400);
+                        });
+                    }, 4000);
                 }
             }
         });
@@ -597,7 +613,46 @@ var calendar = {
                 Text: "- Competent cells protocol<br>- Transformation of competent cells<br>- Electrocompetent cells protocol",
                 Mes: "07",
                 Día: "29",
-            }
+            },
+
+            {
+                Título: "Photoshoot and purification of fungus culture",
+                Categoría: "Project",
+                Mes: "07",
+                Día: "18",
+                Imagen_principal: ["http://igem.org/wiki/images/e/e2/T--Tec-Chihuahua--Hongo1.jpg", "http://igem.org/wiki/images/f/f7/T--Tec-Chihuahua--Hongo2.jpg", "http://igem.org/wiki/images/e/e5/T--Tec-Chihuahua--Hongo3.jpg", "http://igem.org/wiki/images/a/ae/T--Tec-Chihuahua--Hongo4.jpg", "http://igem.org/wiki/images/0/06/T--Tec-Chihuahua--Hongo5.jpg", "http://igem.org/wiki/images/7/73/T--Tec-Chihuahua--Hongo6.jpg", "http://igem.org/wiki/images/a/a4/T--Tec-Chihuahua--Hongo7.jpg",
+                    "http://igem.org/wiki/images/d/db/T--Tec-Chihuahua--Hongo8.jpg",
+                    "http://igem.org/wiki/images/4/49/T--Tec-Chihuahua--Hongo9.jpg",
+                    "http://igem.org/wiki/images/b/b0/T--Tec-Chihuahua--Hongo10.jpg"
+                ],
+                Texto: "The purification we did today consisted on inoculation on solid PDA media by piercing with a straight inoculation loop",
+                containSlider: true
+            },
+
+            {
+                Título: "Confrontations fungus-bacteria",
+                Categoría: "Project",
+                Mes: "07",
+                Día: "21",
+                Imagen_principal: ["http://igem.org/wiki/images/f/f6/T--Tec-Chihuahua--Enf1.jpg",
+                    "http://igem.org/wiki/images/c/c9/T--Tec-Chihuahua--Enf2.jpg",
+                    "http://igem.org/wiki/images/d/d7/T--Tec-Chihuahua--Enf3.jpg",
+                    "http://igem.org/wiki/images/8/80/T--Tec-Chihuahua--Enf4.jpg",
+                    "http://igem.org/wiki/images/8/89/T--Tec-Chihuahua--Enf5.jpg",
+                    "http://igem.org/wiki/images/5/5f/T--Tec-Chihuahua--Enf6.jpg",
+                    "http://igem.org/wiki/images/a/a9/T--Tec-Chihuahua--Enf7.jpg",
+                    "http://igem.org/wiki/images/d/d3/T--Tec-Chihuahua--Enf8.jpg",
+                    "http://igem.org/wiki/images/9/9e/T--Tec-Chihuahua--Enf9.jpg",
+                    "http://igem.org/wiki/images/b/b9/T--Tec-Chihuahua--Enf10.jpg",
+                    "http://igem.org/wiki/images/c/cf/T--Tec-Chihuahua--Enf11.jpg",
+                    "http://igem.org/wiki/images/9/90/T--Tec-Chihuahua--Enf12.jpg"
+                ],
+                Texto: "We photoshooted the fungi and Myxobacteria confrontations in different time periods (24 hours and one week), but in the same conditions (incubated at 37 ºC).",
+                containSlider: true
+            },
+
+
+
 
         ],
 
@@ -686,7 +741,7 @@ var calendar = {
                 Categoría: "Collaboration",
                 Mes: "08",
                 Día: "19",
-                Imagen_principal: ["http://igem.org/wiki/images/thumb/3/39/19agosto.jpg/800px-19agosto.jpg"],
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/f/f6/Lala.jpg/450px-Lala.jpg"],
                 Texto: "",
             },
 
@@ -867,12 +922,45 @@ var calendar = {
 
         ],
 
-        [
-            {
+        // october
+        [{
                 Text: "- Team video planning<br>- Reseeding of transformed cells",
                 Mes: "10",
                 Día: "1",
             },
+
+            {
+                Text: "Plasmid extraction <br> 3A Assembly",
+                Mes: "10",
+                Día: "4",
+            },
+
+            {
+                Text: "Intermediates extraction",
+                Mes: "10",
+                Día: "8",
+            },
+
+
+            {
+                Título: "Banner ready",
+                Mes: "10",
+                Categoría: "iGEM",
+                Día: "6",
+                Texto: "We sent our banner for the Giant Jamboree. Thanks to Antonio Alejandro Flores Quintanilla and Daniel Estrada Ortega for their help in this beautiful design!",
+                Imagen_principal: ["http://igem.org/wiki/images/3/36/T--Tec-Chihuahua--Banner.jpg"],
+            },
+
+
+            {
+                Título: "Introduction video shooting",
+                Categoría: "Diffusion",
+                Mes: "10",
+                Día: "9",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/c/cf/T--Tec-Chihuahua--vid.jpg/800px-T--Tec-Chihuahua--vid.jpg"],
+                Texto: "The guys from Productora 206 came to the lab to shoot the first part of our introduction video. It was tiring but we had a lot of fun. CUT!!",
+            }
+
         ]
 
     ],
@@ -1018,6 +1106,19 @@ var calendar = {
                 $("#modalSlider").carousel("pause").removeData();
                 $("#modalSlider").carousel(0);
                 $('#sliderWrapper').removeClass("hidden");
+                if(typeof(data.containSlider) !== "undefined") {
+                    $('#modalSlider .slider-img').css({
+                        backgroundSize: "auto 95%",
+                    });                    
+                    $('.carousel-inner').addClass('no-after');
+                    $('#modalSlider .carousel-indicators').addClass("left");
+                } else {
+                    $('.carousel-inner').removeClass('no-after');
+                    $('#modalSlider .carousel-indicators').removeClass("left");
+                    $('#modalSlider .slider-img').css({
+                        backgroundSize: "cover",
+                    });                    
+                }
             } else {
                 $('#eventModal #mainImage').removeClass('hidden').html('<img class="modal-main-image" src="' + data.Imagen_principal[0] + '" />')
             }
