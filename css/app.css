@@ -60,6 +60,10 @@ p.attention, #content .std-section p.attention {
     margin: 40px;
 }
 
+.margin-big {
+    margin: 80px auto;
+}
+
 .parallax {
     margin: 50px 0;
     width: 100%;
@@ -180,11 +184,10 @@ p.attention, #content .std-section p.attention {
 .cover {
     z-index: 5;
     display: block;
-    background: url(http://2016.igem.org/wiki/images/a/a8/T--Tec-Chihuahua--newcover.jpg) center 0% no-repeat;
+    background: url(http://2016.igem.org/wiki/images/4/48/T--Tec-Chihuahua--Alfalfa-field-myxo-placeholder.jpeg) center 0% no-repeat;
     background-size: cover;
     background-color: #333;
-    height: 600px;
-    max-height: 100vh;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
@@ -654,11 +657,13 @@ p.attention, #content .std-section p.attention {
 .calendar-header .dropdown ul {
     background-color: rgba(0,0,0,0.4);
     left: -14px;
+    padding-left: 0px;
 }
 
 .calendar-header .dropdown ul li {
     padding: 5px 10px;
     font-size: 18px;
+    list-style: none;
 }
 
 .calendar-header .dropdown ul li:hover {
@@ -750,6 +755,7 @@ p.attention, #content .std-section p.attention {
 }
 
 .slider-img {
+    background-color: #333;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -843,6 +849,41 @@ p.attention, #content .std-section p.attention {
 
 .social-media img:hover {
     background-color: #3399cc;
+}
+
+.protocol {
+    padding: 15px 20px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    border: #bcbcbc solid 1px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.protocol>span {
+    position: relative;
+    top: 4px;
+    float: right;
+}
+
+.protocol:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.protocol:not(:first-child) {
+    border-top: none;
+}
+
+.protocol-pdf {
+    height: 800px;
+    max-height: 80vh;
+}
+
+.protocol[aria-expanded=true]>span {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 @media (max-width: 767px) {

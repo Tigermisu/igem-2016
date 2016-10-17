@@ -2,8 +2,8 @@
 <span id="meta" data-this-page="home"></span>
 
 <div id="fullpage">
-    <div class="section fp-auto-height" data-anchor="home">
-            <div class="cover" data-parallax="">
+    <div class="section" data-anchor="home">
+            <div class="cover" data-parallax="bottom">
             <div class="overlay"></div>
             <div class="gradient-overlay"></div>
             <div class="content">
@@ -11,17 +11,45 @@
             </div>
         </div>
     </div>
-    <div class="section" style="background-color: #078794" data-anchor="myxobacteria">
-        <p>We have previously carried out experiments with <i>Myxobacteria</i>, poorly studied bacteria with great biotechnological potential because of its capacity of producing a large number of secondary metabolites. They are also known for their properties of predation, fruiting bodies formation, and desiccation resistance.</p>
-    </div>        
-    <div class="section" style="background-color: #F07033" data-anchor="fungi">
-        <p>We isolated this bacteria from our region and we got proof they are able to inhibit fungus and other bacteria. Therefore, we saw a potential iGEM project on enhancing <i>Myxobacteria’s</i> properties to attack some specific endemic fungi.</p>
+    <div class="section" style="background-color: #078794" data-anchor="Agriculture">
+        <div class="sorted">
+            <div class="grow">
+                <p>
+                    Phytopathogens are a great problem concerning agriculture, and frequently lead to great economic losses. Although chemical pesticides and fungicides have been used against these pathogens, they often result in the accumulation of toxic compounds or increase the resistance of the pathogens. 
+                </p>
+            </div>
+            <div>
+                <img src="http://igem.org/wiki/images/thumb/f/f8/T--Tec-Chihuahua--Insecticide.jpg/424px-T--Tec-Chihuahua--Insecticide.jpg.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
     </div>
-    <div class="section" style="background-color: #DA4E5B" data-anchor="agriculture">
-        <p>We decided to apply enhanced <i>Myxobacteria</i> to solve a diffused problem in our local agriculture. The state of Chihuahua is the 2nd producer of alfalfa in Mexico. This legume has a significant impact on our economy, but it is often put at risk by different biological factors such as bacteria, fungus, plagues, extreme temperatures and hydric stress.</p>
+    <div class="section" style="background-color: #F07033" data-anchor="Myxobacteria">
+        <div class="sorted">
+            <div>
+                <img src="http://igem.org/wiki/images/c/c4/T--Tec-Chihuahua--Bachongo.jpg" class="img-responsive">
+            </div>
+
+            <div class="grow">
+                <p>
+                    This is why biocontrol using microorganisms has become a viable alternative. Myxobacteria are a common and diverse group of bacteria largely fed through predation, able to produce a wide range of secondary metabolites. The fungal antagonisms may be due to competition for nutrients or the production of antifungal compounds. 
+                </p>
+            </div>
+        </div>
+
     </div>
-    <div class="section" style="background-color: #87982E" data-anchor="objective">            
-        <p>Our team set to work with <i>Myxobacteria</i> to battle <i>Rhizoctonia solani</i>, a fungus affecting alfalfa by rotting different parts of the plant.</p>
+    <div class="section" style="background-color: #DA4E5B" data-anchor="mission">
+        <div class="sorted">
+            <div class="grow">
+                <p>
+                    The aim of this investigation is genetically engineer Myxobacteria mainly to enhance their antifungal capabilities and increase their temperature resistance. We intend to isolate phytopathogenic organisms from damaged alfalfa crops nearby Chihuahua city, and prove the efficiency of our modified bacteria making confrontations between them. We also want to broaden the impact in affected crops such as chilli and potato.
+                </p>
+            </div>
+            <div>
+                <img src="http://igem.org/wiki/images/thumb/c/c9/T--Tec-Chihuahua--science.jpg/355px-T--Tec-Chihuahua--science.jpg.png" class="img-responsive">
+            </div>
+        </div>
     </div>
     <div class="section fp-auto-height" style="background-color: #333" data-anchor="footer">     
         <?php include('footer-nav.html') ?>
@@ -29,10 +57,9 @@
 </div>
 
 <ul id="slideMenu" class="slide-menu">
-    <li data-menuanchor="myxobacteria"><a href="#myxobacteria">Myxobacteria</a></li>
-    <li data-menuanchor="fungi"><a href="#fungi">Fungi</a></li>
-    <li data-menuanchor="agriculture"><a href="#agriculture">Agriculture</a></li>
-    <li data-menuanchor="objective"><a href="#objective">Objective</a></li>
+    <li data-menuanchor="Agriculture"><a href="#Agriculture">Agriculture</a></li>
+    <li data-menuanchor="Myxobacteria"><a href="#Myxobacteria">Myxobacteria</a></li>
+    <li data-menuanchor="mission"><a href="#mission">Mission</a></li>
 </ul>
 
 <div class="control-arrows">

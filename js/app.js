@@ -1,6 +1,6 @@
 var slideTimeout;
 
-$(function() {
+$(function () {
     header.init();
     calendar.init();
     parallax.init();
@@ -8,7 +8,7 @@ $(function() {
         $('#fullpage').fullpage({
             scrollBar: true,
             menu: '#slideMenu',
-            onLeave: function(index, nextIndex, direction) {
+            onLeave: function (index, nextIndex, direction) {
                 if (nextIndex == $('#fullpage .section').length || nextIndex == 1) {
                     $('.slide-menu').removeClass('show');
                     if (nextIndex == 1) {
@@ -25,11 +25,11 @@ $(function() {
                     $('.control-arrows span').removeClass('nope');
                     $('#upArrow').removeClass('go-down');
                     clearTimeout(slideTimeout);
-                    slideTimeout = setTimeout(function() {
+                    slideTimeout = setTimeout(function () {
                         $('.slide-menu li').animate({
                             opacity: 0
                         }, 1200);
-                        $('.slide-menu').one("mouseenter", function() {
+                        $('.slide-menu').one("mouseenter", function () {
                             $('.slide-menu li').animate({
                                 opacity: 1
                             }, 400);
@@ -52,11 +52,11 @@ $(function() {
 
     }
 
-    $('#upArrow').click(function() {
+    $('#upArrow').click(function () {
         $.fn.fullpage.moveSectionUp();
     });
 
-    $('#downArrow').click(function() {
+    $('#downArrow').click(function () {
         $.fn.fullpage.moveSectionDown();
     });
 
@@ -70,12 +70,12 @@ $(function() {
 });
 
 var header = {
-    init: function() {
+    init: function () {
         var $meta = $('#meta'),
             activePage = $meta.data('thisPage');
         $(".option-item[data-pageTitle=" + activePage + "]").addClass('active');
 
-        $(document).on('click', '.option.header:not(.active-menu)', function() {
+        $(document).on('click', '.option.header:not(.active-menu)', function () {
             var $this = $(this),
                 $dropdown = $this.siblings('.option-dropdown'),
                 $parent = $this.parent();
@@ -96,8 +96,8 @@ var header = {
                             width: $('#optionsWrapper').width() - $parent.width()
                         })
                         $(this).addClass('active-menu');
-                        $dropdown.find('.option').each(function(i, elem) {
-                            setTimeout(function() {
+                        $dropdown.find('.option').each(function (i, elem) {
+                            setTimeout(function () {
                                 $(elem).css('transform', 'translate(0)');
                             }, 60 * i);
                         });
@@ -108,7 +108,7 @@ var header = {
             }
         });
 
-        $(document).on('click', '.active-menu', function() {
+        $(document).on('click', '.active-menu', function () {
             var $this = $(this),
                 $dropdown = $this.siblings('.option-dropdown'),
                 $parent = $this.parent();
@@ -120,22 +120,22 @@ var header = {
 
         });
 
-        $('.toggle-menu').click(function() {
+        $('.toggle-menu').click(function () {
             $('.main-nav').addClass('open');
             if ($('#globalWrapper').length > 0) {
                 $('#HQ_page-tec').append('<div class="black-overlay"></div>');
             } else {
                 $('body').append('<div class="black-overlay"></div>');
             }
-            $('.black-overlay').one('click', function() {
+            $('.black-overlay').one('click', function () {
                 $('.main-nav').removeClass('open');
                 $('.black-overlay').remove();
             });
         });
     },
 
-    toggleHeader: function($dropdown) {
-        $('.option-dropdown').not($dropdown).each(function() {
+    toggleHeader: function ($dropdown) {
+        $('.option-dropdown').not($dropdown).each(function () {
             var $otherDd = $(this);
             if ($otherDd.hasClass('open')) {
                 $otherDd.css('max-height', 0);
@@ -150,8 +150,8 @@ var header = {
         $dropdown.toggleClass('open');
     },
 
-    openHeader: function($dropdown) {
-        $('.option-dropdown').not($dropdown).each(function() {
+    openHeader: function ($dropdown) {
+        $('.option-dropdown').not($dropdown).each(function () {
             var $otherDd = $(this);
             if ($otherDd.hasClass('open')) {
                 $otherDd.css('max-height', 0);
@@ -630,25 +630,34 @@ var calendar = {
             },
 
             {
+                Título: "Fungus characterization",
+                Categoría: "Project",
+                Mes: "07",
+                Día: "20",
+                Imagen_principal: ["http://igem.org/wiki/images/0/06/T--Tec-Chihuahua--20julioa.jpg", "http://igem.org/wiki/images/e/e1/T--Tec-Chihuahua--20juliob.jpg"],
+                Texto: "Rhizopus oryzae is one of the most common fungus that lives in dead organic matter and it’s isolated from plant and soil material. We could characterize this fungus thanks to its macro and microscopic characteristics that we observed:<br><br>Macroscopic:<br>Color: brownish-black and yellowish base<br>Texture: wooly<br>Bottom view: yellowish<br>Elevation: medium (sporangiophore)<br><br>Microscopic:<br>Stolon: (serial hyphae)<br>Sporangiophores<br>Brownish sporangium.",
+            },
+
+            {
                 Título: "Confrontations fungus-bacteria",
                 Categoría: "Project",
                 Mes: "07",
                 Día: "21",
-                Imagen_principal: ["http://igem.org/wiki/images/f/f6/T--Tec-Chihuahua--Enf1.jpg",
+                Imagen_principal: ["http://parts.igem.org/wiki/images/f/f6/T--Tec-Chihuahua--Enf1.jpg",
                     "http://igem.org/wiki/images/c/c9/T--Tec-Chihuahua--Enf2.jpg",
-                    "http://igem.org/wiki/images/d/d7/T--Tec-Chihuahua--Enf3.jpg",
+                    "http://parts.igem.org/wiki/images/d/d7/T--Tec-Chihuahua--Enf3.jpg",
                     "http://igem.org/wiki/images/8/80/T--Tec-Chihuahua--Enf4.jpg",
-                    "http://igem.org/wiki/images/8/89/T--Tec-Chihuahua--Enf5.jpg",
+                    "http://parts.igem.org/wiki/images/8/89/T--Tec-Chihuahua--Enf5.jpg",
                     "http://igem.org/wiki/images/5/5f/T--Tec-Chihuahua--Enf6.jpg",
-                    "http://igem.org/wiki/images/a/a9/T--Tec-Chihuahua--Enf7.jpg",
+                    "http://parts.igem.org/wiki/images/a/a9/T--Tec-Chihuahua--Enf7.jpg",
                     "http://igem.org/wiki/images/d/d3/T--Tec-Chihuahua--Enf8.jpg",
-                    "http://igem.org/wiki/images/9/9e/T--Tec-Chihuahua--Enf9.jpg",
+                    "http://parts.igem.org/wiki/images/9/9e/T--Tec-Chihuahua--Enf9.jpg",
                     "http://igem.org/wiki/images/b/b9/T--Tec-Chihuahua--Enf10.jpg",
-                    "http://igem.org/wiki/images/c/cf/T--Tec-Chihuahua--Enf11.jpg",
+                    "http://parts.igem.org/wiki/images/c/cf/T--Tec-Chihuahua--Enf11.jpg",
                     "http://igem.org/wiki/images/9/90/T--Tec-Chihuahua--Enf12.jpg"
                 ],
-                Texto: "We photoshooted the fungi and Myxobacteria confrontations in different time periods (24 hours and one week), but in the same conditions (incubated at 37 ºC).",
-                containSlider: true
+                containSlider: true,
+                Texto: "We photoshooted the fungi and Myxobacteria confrontations in different time periods (24 hours and one week), but in the same conditions (incubated at 37 ºC)."
             },
 
 
@@ -959,13 +968,31 @@ var calendar = {
                 Día: "9",
                 Imagen_principal: ["http://igem.org/wiki/images/thumb/c/cf/T--Tec-Chihuahua--vid.jpg/800px-T--Tec-Chihuahua--vid.jpg"],
                 Texto: "The guys from Productora 206 came to the lab to shoot the first part of our introduction video. It was tiring but we had a lot of fun. CUT!!",
+            },
+
+            {
+                Título: "Judging form delivery",
+                Categoría: "iGEM",
+                Mes: "10",
+                Día: "14",
+                Texto: "Intense work to deliver the Judging form on time! The team got together to sort out some final details",
+                Imagen_principal: ["http://igem.org/wiki/images/4/4d/T--Tec-Chihuahua--14oct.jpg"]
+            },
+
+            {
+                Título: "Official Difussion Event",
+                Categoría: "Diffusion",
+                Mes: "10",
+                Día: "18",
+                Texto: "We’ll have the opportunity to expose our project before attending the Giant Jamboree. Nervous and excited we stand!",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Cafeconciencia.jpg/409px-T--Tec-Chihuahua--Cafeconciencia.jpg.png"]
             }
 
         ]
 
     ],
 
-    init: function() {
+    init: function () {
         if ($('#calendar').length > 0) {
             var currentMonth = new Date().getMonth();
             calendar.loadMonth(currentMonth);
@@ -973,7 +1000,7 @@ var calendar = {
         }
     },
 
-    loadMonth: function(monthNum, animate) {
+    loadMonth: function (monthNum, animate) {
         if (monthNum < 0 || monthNum >= 12) return false;
         var date = new Date(2016, monthNum),
             header = calendar.monthNames[date.getMonth()] + " " + date.getFullYear(),
@@ -1026,7 +1053,7 @@ var calendar = {
                 });
                 $("#calendarWrapper").addClass('right');
             }
-            setTimeout(function() {
+            setTimeout(function () {
                 $('#calendar').css('overflow', '');
                 $("#calendarWrapper").removeClass('left').removeClass('right');
                 $('#oldCalendar').remove();
@@ -1036,13 +1063,13 @@ var calendar = {
 
     },
 
-    populateMonth: function(monthNum) {
+    populateMonth: function (monthNum) {
         var $grids = $('#calendar div.calendar-grid');
         $grids.removeClass('has-event');
-        $.each(calendar.data[monthNum], function(i, v) {
+        $.each(calendar.data[monthNum], function (i, v) {
             var $day = $grids.find('[data-day=' + v.Día + ']').first().parent();
             if ($day.find('.event').length == 0) $day.prepend("<div class='event'></div>");
-            if (typeof(v.Text) == "undefined") {
+            if (typeof (v.Text) == "undefined") {
                 $day.find('.event').append("<img src='" + calendar.categories[v.Categoría] + "'/>");
                 $day.find('.event img').last().data('key', monthNum + '-' + i);
             } else {
@@ -1055,19 +1082,19 @@ var calendar = {
         });
     },
 
-    setEvents: function() {
-        $('.calendar-header .controls .glyphicon').click(function() {
+    setEvents: function () {
+        $('.calendar-header .controls .glyphicon').click(function () {
             var currentMonth = parseInt($('#calendar').data('currentMonth')),
                 tgtMonth = currentMonth + ($(this).index() == 0 ? -1 : 1);
             calendar.loadMonth(tgtMonth, true);
         });
 
-        $('.calendar-header .controls .dropdown ul li').click(function() {
+        $('.calendar-header .controls .dropdown ul li').click(function () {
             var tgtMonth = $(this).index();
             calendar.loadMonth(tgtMonth, true);
         });
 
-        $('.calendar-legend li').on('mouseenter click', function() {
+        $('.calendar-legend li').on('mouseenter click', function () {
             var $li = $(this);
             if ($li.find('.igemtooltip').length == 0) {
                 $li.append('<div class="igemtooltip"></div>');
@@ -1075,18 +1102,18 @@ var calendar = {
             }
         });
 
-        $(document).on('mouseleave click', '.igemtooltip', function(e) {
+        $(document).on('mouseleave click', '.igemtooltip', function (e) {
             var $tooltip = $(this);
-            $tooltip.fadeOut(function() {
+            $tooltip.fadeOut(function () {
                 if ($(this).closest('.calendar-grid').length == 0) $tooltip.remove();
             });
         });
 
-        $(document).on('click', '.has-event', function(e) {
+        $(document).on('click', '.has-event', function (e) {
             var $tooltip = $(this).find('.igemtooltip').fadeIn();
         });
 
-        $(document).on('click', '.event img', function(e) {
+        $(document).on('click', '.event img', function (e) {
             e.stopPropagation();
             var key = $(this).data('key').split('-'),
                 data = calendar.data[key[0]][key[1]];
@@ -1095,7 +1122,7 @@ var calendar = {
             if (data.Imagen_principal.length > 1) {
                 $("#modalSlider .carousel-inner").html('');
                 $("#modalSlider .carousel-indicators").html('');
-                $.each(data.Imagen_principal, function(i, v) {
+                $.each(data.Imagen_principal, function (i, v) {
                     var d = "<div class='item'><div class='slider-img' style='background-image: url(" + v + ");'></div></div>",
                         indicator = "<li data-target='#modalSlider' data-slide-to='" + i + "'></li>";
                     $("#modalSlider .carousel-inner").append(d);
@@ -1106,10 +1133,10 @@ var calendar = {
                 $("#modalSlider").carousel("pause").removeData();
                 $("#modalSlider").carousel(0);
                 $('#sliderWrapper').removeClass("hidden");
-                if(typeof(data.containSlider) !== "undefined") {
+                if (typeof (data.containSlider) !== "undefined") {
                     $('#modalSlider .slider-img').css({
                         backgroundSize: "auto 95%",
-                    });                    
+                    });
                     $('.carousel-inner').addClass('no-after');
                     $('#modalSlider .carousel-indicators').addClass("left");
                 } else {
@@ -1117,7 +1144,7 @@ var calendar = {
                     $('#modalSlider .carousel-indicators').removeClass("left");
                     $('#modalSlider .slider-img').css({
                         backgroundSize: "cover",
-                    });                    
+                    });
                 }
             } else {
                 $('#eventModal #mainImage').removeClass('hidden').html('<img class="modal-main-image" src="' + data.Imagen_principal[0] + '" />')
@@ -1129,9 +1156,9 @@ var calendar = {
 }
 
 var parallax = {
-    init: function() {
-        $(window).scroll(function() {
-            $('[data-parallax]').each(function() {
+    init: function () {
+        $(window).scroll(function () {
+            $('[data-parallax]').each(function () {
                 var scrollTop = $(window).scrollTop(),
                     offset = $(this).offset().top,
                     windowHeight = $(window).innerHeight(),
@@ -1145,7 +1172,6 @@ var parallax = {
                     }
                     $(this).css('background-position', '50% ' + newPosition + "%");
                 }
-                console.log(scrollTop, offset, windowHeight, divHeight, newPosition, bottomUp);
             });
         }).scroll();
 
