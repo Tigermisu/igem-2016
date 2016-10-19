@@ -39,6 +39,10 @@
                         <img src="http://2016.igem.org/wiki/images/3/30/T--Tec-Chihuahua--igem-small.png">
                         <p>iGem</p>
                     </li>
+                    <li data-tooltip="The development of a sensor is no easy task. Click this icon to know more about our sensor!">
+                        <img src="http://igem.org/wiki/images/thumb/5/51/T--Tec-Chihuahua--Sensor.jpg/395px-T--Tec-Chihuahua--Sensor.jpg.png">
+                        <p>Sensor</p>
+                    </li>
                     <li data-tooltip="Click on the green days to see our work done that day.">
                         <div style="position:relative; top: 10px; border-radius: 5px; width: 50px; height: 30px; background-color: #006900; display: inline-block;"></div>
                         <p>Activity</p>

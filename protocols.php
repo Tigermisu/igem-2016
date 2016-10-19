@@ -77,6 +77,7 @@
             </object>
 
         </div>
+        
         <div class="protocol" data-toggle="collapse" data-target="#protocol8">Transforming Competent Cells <span class="glyphicon glyphicon-chevron-down"></span></div>
         <div class="protocol-pdf collapse" id="protocol8">
             <object data="http://2016.igem.org/wiki/images/d/d4/T--Tec-Chihuahua--transforming-competent.pdf" type="application/pdf" width="100%" height="100%">
@@ -84,8 +85,15 @@
                 This browser does not support PDFs. Please download the PDF to view it: <a href="http://2016.igem.org/wiki/images/d/d4/T--Tec-Chihuahua--transforming-competent.pdf">Download PDF</a>
                 </iframe>
             </object>
-
         </div>   
+        <div class="protocol" data-toggle="collapse" data-target="#protocol9">CTT Media and Myxobacteria Electroporation Protocol <span class="glyphicon glyphicon-chevron-down"></span></div>
+        <div class="protocol-pdf collapse" id="protocol9">
+            <object data="http://2016.igem.org/wiki/images/8/8c/T--Tec-Chihuahua--CTTprotocol.pdf" type="application/pdf" width="100%" height="100%">
+                <iframe src="http://2016.igem.org/wiki/images/8/8c/T--Tec-Chihuahua--CTTprotocol.pdf" width="100%" height="100%" style="border: none;">
+                This browser does not support PDFs. Please download the PDF to view it: <a href="http://2016.igem.org/wiki/images/8/8c/T--Tec-Chihuahua--CTTprotocol.pdf">Download PDF</a>
+                </iframe>
+            </object>
+        </div> 
     </div>
 </div>
 

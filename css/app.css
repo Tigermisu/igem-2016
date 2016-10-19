@@ -41,6 +41,13 @@ p.attention, #content .std-section p.attention {
     font-size: 24px;
 }
 
+p.attention.left, #content .std-section p.attention.left {
+    margin: 40px auto;
+    display: block;
+    text-align: left;
+    font-size: 24px;
+}
+
 .page-preview {
     max-width: 70%;
     max-height: 70vh;
@@ -57,7 +64,7 @@ p.attention, #content .std-section p.attention {
 }
 
 .margin {
-    margin: 40px;
+    margin: 40px auto;
 }
 
 .margin-big {
@@ -80,6 +87,12 @@ p.attention, #content .std-section p.attention {
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px #333;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* BEGIN NAV */
@@ -391,6 +404,10 @@ p.attention, #content .std-section p.attention {
     max-height: 30vh;
     width: auto;
     margin: 10px auto;
+}
+
+.sorted img.big {
+    max-height: 60vh;
 }
 
 #bodyContent .section p, .section p, #bodyContent .footer p, .footer p {
@@ -886,6 +903,43 @@ p.attention, #content .std-section p.attention {
     transform: rotate(180deg);
 }
 
+.std-section ul.big-list > li {
+    font-size: 18px;
+    list-style: none;
+    margin: 15px auto;
+}
+
+.std-section ul.big-list .padpls {
+    padding-left: 40px;
+    font-style: italic;
+}
+
+#carousel-safety .item {
+    background-position: center center;
+    background-size: cover;
+    background-color: #333;
+    height: 500px;
+    max-height: 80vh;
+    width: 100%;
+}
+
+.sorted p button {
+    margin: 10px 15px;
+    font-size: 18px;
+}
+
+input, select {
+    width: 100%;
+    display: block;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 5px;
+}
+
 @media (max-width: 767px) {
 
     .main-nav, .nav-backdrop {
@@ -921,6 +975,10 @@ p.attention, #content .std-section p.attention {
     .cover {
         background-attachment: scroll;
         height: 100vh;
+    }
+
+    .fp-controlArrow {
+        opacity: 0.3;
     }
 
     .main-nav .options-wrapper {

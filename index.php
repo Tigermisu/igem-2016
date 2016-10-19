@@ -19,7 +19,7 @@
                 </p>
             </div>
             <div>
-                <img src="http://igem.org/wiki/images/thumb/f/f8/T--Tec-Chihuahua--Insecticide.jpg/424px-T--Tec-Chihuahua--Insecticide.jpg.png" class="img-responsive">
+                <img src="http://igem.org/wiki/images/thumb/f/f8/T--Tec-Chihuahua--Insecticide.jpg/424px-T--Tec-Chihuahua--Insecticide.jpg.png" class="img-responsive big">
             </div>
         </div>
         <div class="clearfix"></div>
@@ -28,7 +28,7 @@
     <div class="section" style="background-color: #F07033" data-anchor="Myxobacteria">
         <div class="sorted">
             <div>
-                <img src="http://igem.org/wiki/images/c/c4/T--Tec-Chihuahua--Bachongo.jpg" class="img-responsive">
+                <img src="http://igem.org/wiki/images/c/c4/T--Tec-Chihuahua--Bachongo.jpg" class="img-responsive big">
             </div>
 
             <div class="grow">
@@ -47,7 +47,7 @@
                 </p>
             </div>
             <div>
-                <img src="http://igem.org/wiki/images/thumb/c/c9/T--Tec-Chihuahua--science.jpg/355px-T--Tec-Chihuahua--science.jpg.png" class="img-responsive">
+                <img src="http://igem.org/wiki/images/thumb/c/c9/T--Tec-Chihuahua--science.jpg/355px-T--Tec-Chihuahua--science.jpg.png" class="img-responsive big">
             </div>
         </div>
     </div>

@@ -67,6 +67,30 @@ $(function () {
     $('#HQ_page').attr('id', 'HQ_page-tec');
 
 
+    $('#getDocument').submit(function(e){
+        e.preventDefault();
+        var postData = {
+            email: $('#email').val(),
+            name: $('#name').val(),
+            country: $('#country').val(),
+            language: $('#language').val()
+        }
+        $.ajax({
+            url: "http://igem.jaquez.mx/download",
+            method: "post",
+            data: postData,
+            complete: function(r) { 
+                var url = "";
+                $('#popupBlocked').removeClass("hidden");
+                if(language == "english") url = "http://2016.igem.org/wiki/images/4/49/T--Tec-Chihuahua--document-full-english.pdf";
+                else url = "http://2016.igem.org/wiki/images/b/b8/T--Tec-Chihuahua--document-full-spanish.pdf";
+                $('#popupBlocked a').attr('href', url);
+                window.open(url, '_blank');
+            }
+        });
+    });
+
+
 });
 
 var header = {
@@ -174,7 +198,8 @@ var calendar = {
         "Project": "http://igem.org/wiki/images/thumb/2/2d/T--Tec-Chihuahua--ProjectDN.jpg/155px-T--Tec-Chihuahua--ProjectDN.jpg.png",
         "Human Practices": "http://igem.org/wiki/images/thumb/f/f2/T--Tec-Chihuahua--HP.jpg/282px-T--Tec-Chihuahua--HP.jpg.png",
         "Diffusion": "http://igem.org/wiki/images/thumb/0/0f/T--Tec-Chihuahua--Diffusion.jpg/200px-T--Tec-Chihuahua--Diffusion.jpg.png",
-        "iGEM": "http://2016.igem.org/wiki/images/3/30/T--Tec-Chihuahua--igem-small.png"
+        "iGEM": "http://2016.igem.org/wiki/images/3/30/T--Tec-Chihuahua--igem-small.png",
+        "Sensor": "http://igem.org/wiki/images/thumb/5/51/T--Tec-Chihuahua--Sensor.jpg/395px-T--Tec-Chihuahua--Sensor.jpg.png"
 
     },
 
@@ -509,7 +534,36 @@ var calendar = {
 
         //julio
 
-        [{
+        [
+
+            {
+                Título: "First Photoresistor test",
+                Categoría: "Sensor",
+                Mes: "07",
+                Día: "6",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/2/28/T--Tec-Chihuahua--S07.6.jpg/798px-T--Tec-Chihuahua--S07.6.jpg", "http://igem.org/wiki/images/thumb/a/a9/T--Tec-Chihuahua--S07.6b.jpg/798px-T--Tec-Chihuahua--S07.6b.jpg"],
+                Texto: "After developing the concept of a device that could scan the surface of a petri dish, in which all the experiments were to be carried out, a prototype was to be built. <br> Tests were carried out in order to test the feasibility of using the photoresistors as effective sensors. The light source was later changed to a red LED to fit better the sensitivity of the photo resistor."
+            },
+
+            {
+                Título: "Arrangement of testing",
+                Categoría: "Sensor",
+                Mes: "07",
+                Día: "20",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/9/92/T--Tec-Chihuahua--S07.20.jpg/798px-T--Tec-Chihuahua--S07.20.jpg"],
+                Texto: "This arrangement was used to test each of the photoresistors. The BH1750 light sensor is shown close to the photoresistor. Each photoresistor had to be calibrated with the sensor. In order to do this, the value of the each of the resistors at the same level of light was registered. After this, an LED was lit so that it would fall over the photoresistor. After three changes in light, its values were registered and compared to the values given by the BH1750 light sensor. With this,a direct relation was established between the determined value of a photoresistor and its correspondent value in lux, given by the BH1750 light sensor. With every value established, a given hysteresis might be applied by tweaking the code. "
+            },
+
+            {
+                Título: "Arrangement of the sensors",
+                Categoría: "Sensor",
+                Mes: "07",
+                Día: "29",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/6/6d/T--Tec-Chihuahua--S07.29.jpg/798px-T--Tec-Chihuahua--S07.29.jpg"],
+                Texto: "The proposed arrangement for the sensors is a line of photosensors aligned so that they form an X axis. This line of sensor is to be moved by a mechanism following a Y axis. WIth this, the entire surface is covered.The multiplexers are devices that allow to switch between two or more signals using a single wire. They are used because there are 11 photoresistors and there is only six channels to read them. By using a multiplexer, up to four photoresistor signals can use one channel using a single wire. Multiplexers are also shown in the picture with the arrangement of the sensors."
+            },
+
+            {
                 Text: "- Preparation of Ampicillin Stock (25mg/mL)<br>- Growth of OneShot MachTM cells on LB broth<br>- Inoculation of Rhizoctonia solani on PDA agar<br>- Macro and microanalysis of previously inoculated fungi",
                 Mes: "07",
                 Día: "5",
@@ -667,7 +721,11 @@ var calendar = {
 
         //agosto
 
-        [{
+        [
+
+
+
+            {
                 Título: "India conference via Google Hangouts",
                 Categoría: "Collaboration",
                 Mes: "08",
@@ -932,7 +990,54 @@ var calendar = {
         ],
 
         // october
-        [{
+        [
+
+            {
+                Título: "Incorporation to the Arduino",
+                Categoría: "Sensor",
+                Mes: "10",
+                Día: "14",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/f/f5/T--Tec-Chihuahua--S10.14.jpg/798px-T--Tec-Chihuahua--S10.14.jpg"],
+                Texto: "The sensor was incorporated to the Arduino (the hardware of the sensor) and wires were labeled for their easy identification."
+            },
+            
+            {
+                Título: "Sensor assembly",
+                Categoría: "Sensor",
+                Mes: "10",
+                Día: "10",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/1/14/T--Tec-Chihuahua--S10.10.jpg/798px-T--Tec-Chihuahua--S10.10.jpg", "http://igem.org/wiki/images/thumb/a/a5/T--Tec-Chihuahua--S10.10b.jpg/798px-T--Tec-Chihuahua--S10.10b.jpg", "http://igem.org/wiki/images/thumb/9/92/T--Tec-Chihuahua--S10.10c.jpg/798px-T--Tec-Chihuahua--S10.10c.jpg"],
+                Texto: "The components were ready to be soldered to the perfboard. In the images, the sensors were The bases for the multiplexers and the photoresistors were soldered. All the wiring was incorporated as well."
+            },
+
+            {
+                Título: "DVD drive alligning",
+                Categoría: "Sensor",
+                Mes: "10",
+                Día: "16",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/c/c4/T--Tec-Chihuahua--S10.16.jpg/798px-T--Tec-Chihuahua--S10.16.jpg"],
+                Texto: "The photoresistors were aligned under the DVD drive. The red LEDs as light sources are also shown."
+            },
+
+            {
+Título: "DVD Drive Disassembling 1",
+Categoría: "Sensor",
+Mes: "10",
+Día: "3",
+containSlider: true,
+Texto: "Some parts of the DVD Drive were removed to mount the new components. Slide to see a step-by-step explanation ",
+Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sensor1.jpg/756px-T--Tec-Chihuahua--Sensor1.jpg", 
+"http://igem.org/wiki/images/thumb/6/66/T--Tec-Chihuahua--Sensor2.jpg/757px-T--Tec-Chihuahua--Sensor2.jpg",
+"http://igem.org/wiki/images/thumb/4/42/T--Tec-Chihuahua--Sensor3.jpg/722px-T--Tec-Chihuahua--Sensor3.jpg",
+"http://igem.org/wiki/images/thumb/8/8f/T--Tec-Chihuahua--Sensor4.jpg/752px-T--Tec-Chihuahua--Sensor4.jpg",
+"http://igem.org/wiki/images/thumb/8/84/T--Tec-Chihuahua--Sensor5.jpg/755px-T--Tec-Chihuahua--Sensor5.jpg",
+"http://igem.org/wiki/images/thumb/b/b4/T--Tec-Chihuahua--Sensor6.jpg/761px-T--Tec-Chihuahua--Sensor6.jpg",
+"http://igem.org/wiki/images/thumb/2/22/T--Tec-Chihuahua--Sensor7.jpg/757px-T--Tec-Chihuahua--Sensor7.jpg",
+"http://igem.org/wiki/images/thumb/0/05/T--Tec-Chihuahua--Sensor8.jpg/755px-T--Tec-Chihuahua--Sensor8.jpg",
+"http://igem.org/wiki/images/thumb/8/85/T--Tec-Chihuahua--Sensor9.jpg/757px-T--Tec-Chihuahua--Sensor9.jpg"]
+},
+
+            {
                 Text: "- Team video planning<br>- Reseeding of transformed cells",
                 Mes: "10",
                 Día: "1",
@@ -984,7 +1089,7 @@ var calendar = {
                 Categoría: "Diffusion",
                 Mes: "10",
                 Día: "18",
-                Texto: "We’ll have the opportunity to expose our project before attending the Giant Jamboree. Nervous and excited we stand!",
+                Texto: "In front of an audience of students, teachers, parents, administrators and members of the TEC community we carried out our event to present the project, pamphlet and the final text of Human Practices for this edition of iGEM. For almost two hours the team interacted with the audience explaining and answering questions that came up. Likewise we took the opportunity to hand over the official t-shirts that will identify our team in the Giant Jamboree. The presentation was given by some team members that will not be with us in Boston and also we used this opportunity to increase the general interest about the importance of Synthetic Biology to solve actual problems. #RoadToBoston",
                 Imagen_principal: ["http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Cafeconciencia.jpg/409px-T--Tec-Chihuahua--Cafeconciencia.jpg.png"]
             }
 

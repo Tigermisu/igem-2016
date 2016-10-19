@@ -20,7 +20,7 @@
                 </p>
             </div>
             <div>
-                <img src="http://igem.org/wiki/images/thumb/8/87/T--Tec-Chihuahua--Interview.jpg/681px-T--Tec-Chihuahua--Interview.jpg.png" class="img-responsive">
+                <img src="http://igem.org/wiki/images/thumb/8/87/T--Tec-Chihuahua--Interview.jpg/681px-T--Tec-Chihuahua--Interview.jpg.png" class="img-responsive big">
             </div>
         </div>
         <div class="clearfix"></div>
@@ -55,7 +55,7 @@
                 </p>
             </div>
             <div>
-                <img src="http://igem.org/wiki/images/thumb/5/56/23junio1.jpg/800px-23junio1.jpg" class="img-responsive">
+                <img src="http://igem.org/wiki/images/thumb/5/56/23junio1.jpg/800px-23junio1.jpg" class="img-responsive big">
             </div>
         </div>
     </div>
