@@ -1,9 +1,16 @@
 <?php include('header.html'); ?>
 <span id="meta" data-this-page="home"></span>
 
+<div id="loadingScreen" class="loading-screen">
+    <div class="content">
+        <h2 style="position: relative; top: 50px;">Loading</h2>
+        <div class='uil-spin-css' style='-webkit-transform:scale(0.4);'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+    </div>    
+</div>
+
 <div id="fullpage">
     <div class="section" data-anchor="home">
-            <div class="cover" data-parallax="bottom">
+            <div class="cover" data-parallax="bottom" data-fixed>
             <div class="overlay"></div>
             <div class="gradient-overlay"></div>
             <div class="content">

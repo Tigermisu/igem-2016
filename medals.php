@@ -37,7 +37,7 @@
             <li><strong>4.- Part/contribution:</strong> One of our goals is to relate the amount of protein expression with quantity
                 of reflectin expressed in the outer layer of our cells. We had to use <a href="http://parts.igem.org/Part:BBa_K2069000">BBa_K2069000</a>                and <a href="http://parts.igem.org/Part:BBa_K2069001">BBa_K2069001</a> as intermediate parts to achieve our
                 objetives in our chassis. The promoter used was T7, there was no information prior to our research in which
-                thus promoter was used to express a protein on M. xanthus, the host cell that we are introducing as a chasis.
+                this promoter was used to express a protein on M. xanthus, the host cell that we are introducing as a chasis.
                 The parts were submitted on the pSB1C3 backbone. <a href=" http://2016.igem.org/Team:Tec-Chihuahua/projectparts">More details can be found on our iGEM parts registry page.</a></li>
 
         </ul>
@@ -54,7 +54,7 @@
             </li>
             <li><strong>2.- Collaboration:</strong> <a href="http://2016.igem.org/Team:Tec-Chihuahua/Collaborations">See our collaboration page to know more about the teams we had the opportunity to collaborate with</a>.</li>
             <li><strong>3.- Human practices:</strong> Our team is really excited and proud of what we have accomplished in the
-                Human Practices area. We started by developing an analysis where synthetic biology was studied in three aspects;
+                Human Practices area. We started by developing an analysis where synthetic biology was studied in three aspects:
                 economic, legal and ethical. From every approach, we encountered several issues like openness, democracy,
                 IP conflict, winner takes all economy, social responsibility, biosecurity and involuntary risks. Each of
                 these problematics was addressed with a possible solution or explanation and was considered in the creation

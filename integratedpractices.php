@@ -1,6 +1,13 @@
 <?php include('header.html'); ?>
 <span id="meta" data-this-page="hp"></span>
 
+<div id="loadingScreen" class="loading-screen">
+    <div class="content">
+        <h2 style="position: relative; top: 50px;">Loading</h2>
+        <div class='uil-spin-css' style='-webkit-transform:scale(0.4);'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+    </div>    
+</div>
+
 <div id="fullpage">
     <div class="section fp-auto-height" data-anchor="home">
         <div class="mini-cover" style="background-image: url(http://igem.org/wiki/images/thumb/2/26/24junio5.jpg/800px-24junio5.jpg); background-position: 50% 15%;">
@@ -12,17 +19,32 @@
         </div>
     </div>
     <div class="section" style="background-color: #078794" data-anchor="interv">
-        <div class="sorted">
+        <div class="slide" data-anchor="1">
+            <div class="sorted">
             <div class="grow">
                 <p>
-                    In order to learn more about crop diseases our project could impact, we were given the chance to visit some local cultivations. This experience was useful to get to know agricultors, their main worries and problems, alfalfa’s life cycle and importance
-                    and in some cases, doing some sampling.
+                    In order to learn more about crop diseases our project could impact, we were given the chance to visit some local cultivations. This experience was useful to get to know agricultors, their main worries and problems, alfalfa’s life cycle and importance and in some cases, doing some sampling.
                 </p>
             </div>
             <div>
-                <img src="http://igem.org/wiki/images/thumb/8/87/T--Tec-Chihuahua--Interview.jpg/681px-T--Tec-Chihuahua--Interview.jpg.png" class="img-responsive big">
+                <img src="http://igem.org/wiki/images/thumb/a/a5/T--Tec-Chihuahua--Chihuahua.jpg/496px-T--Tec-Chihuahua--Chihuahua.jpg.png" class="img-responsive big">
             </div>
         </div>
+        </div>
+        <div class="slide" data-anchor="2">
+            <div class="sorted">
+            <div>
+                <img src="http://2016.igem.org/wiki/images/thumb/8/89/T--Tec-Chihuahua--Map.jpg/800px-T--Tec-Chihuahua--Map.jpg.png" class="img-responsive big">
+            </div>
+            
+            <div class="grow">
+                <p class="left-text">
+                    We had the opportunity to visit more than ____ Ha of cultivations around our state, in the towns of Chihuahua, Cuauhtémoc, Meoqui and Rosales.
+                </p>
+            </div>
+        </div>
+        </div>
+        
         <div class="clearfix"></div>
 
     </div>
@@ -45,19 +67,33 @@
 
     </div>
     <div class="section" style="background-color: #DA4E5B" data-anchor="lp">
-        <div class="sorted">
+        <div class="slide" data-anchor="1">
+            <div class="sorted">
             <div class="grow">
-                <p class="small">
+                <p>
                     On June 23 we visited Álvaro Cerros, an independent alfalfa cultivator. We interviewed him, and then he told us about the fragility of the cultivation, because of its lack of leaves. He told us about “pudrición texana”, animals (such as worms or insects)
-                    that damage the crop and explained to us the life cycle of alfalfa specifically. We then visited Adrián Ortega, a local producer that also knew about biotechnology, and actually uses bacteria for biological control. He told us he is
-                    familiar with our interest organism: R. solani. He also explained that fungus spread easily because of humidity, by soil and water. He has applied organisms as biologic control, such as wasp liberation to erradicate leipdopters. He
-                    supports the development of agricultural mexican products. He agrees with the use of fertilizers as long as they don’t affect the ecosystem equilibrium. We could do sampling in both visits.
+                    that damage the crop and explained to us the life cycle of alfalfa specifically. 
                 </p>
             </div>
             <div>
                 <img src="http://igem.org/wiki/images/thumb/5/56/23junio1.jpg/800px-23junio1.jpg" class="img-responsive big">
             </div>
         </div>
+        </div>
+        <div class="slide" data-anchor="2">
+        <div class="sorted">
+            
+            <div>
+                <img src="http://igem.org/wiki/images/a/a3/23junio2.jpg" class="img-responsive big">
+            </div>
+            <div class="grow">
+                <p class="small">
+                    We then visited Adrián Ortega, a local producer that also knew about biotechnology, and actually uses bacteria for biological control. He told us he is familiar with our interest organism: R. solani. He also explained that fungus spread easily because of humidity, by soil and water. He has applied organisms as biologic control, such as wasp liberation to erradicate leipdopters. He supports the development of agricultural mexican products. He agrees with the use of fertilizers as long as they don’t affect the ecosystem equilibrium. We could do sampling in both visits.
+                </p>
+            </div>
+        </div>
+        </div>
+        
     </div>
     <div class="section" style="background-color: #87982E" data-anchor="Diseases">
         <div class="sorted">

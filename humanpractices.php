@@ -1,6 +1,13 @@
 <?php include('header.html'); ?>
 <span id="meta" data-this-page="hp"></span>
 
+<div id="loadingScreen" class="loading-screen">
+    <div class="content">
+        <h2 style="position: relative; top: 50px;">Loading</h2>
+        <div class='uil-spin-css' style='-webkit-transform:scale(0.4);'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+    </div>    
+</div>
+
 <div id="fullpage">
     <div class="section fp-auto-height" data-anchor="home">
         <div class="mini-cover" style="background-image: url(http://2016.igem.org/wiki/images/9/97/T--Tec-Chihuahua--human-practices-cover.jpeg)">
@@ -29,7 +36,7 @@
         <div class="slide" data-anchor="2">
              <div class="sorted">
                 <div>
-                    <img src="http://igem.org/wiki/images/6/67/T--Tec-Chihuahua--Ethicsimg.jpg" class="img-responsive big">
+                    <img src="http://igem.org/wiki/images/thumb/7/73/T--Tec-Chihuahua--10.18c.jpg/800px-T--Tec-Chihuahua--10.18c.jpg" class="img-responsive big">
                 </div>
 
                 <div class="grow">

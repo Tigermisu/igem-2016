@@ -1,9 +1,16 @@
 <?php include('header.html'); ?>
 <span id="meta" data-this-page="project"></span>
 
+<div id="loadingScreen" class="loading-screen">
+    <div class="content">
+        <h2 style="position: relative; top: 50px;">Loading</h2>
+        <div class='uil-spin-css' style='-webkit-transform:scale(0.4);'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+    </div>    
+</div>
+
 <div id="fullpage">
     <div class="section fp-auto-height" data-anchor="home">
-        <div class="mini-cover" style="background-image: url()">
+        <div class="mini-cover" style="background-image: url(http://parts.igem.org/wiki/images/a/a5/T--Tec-Chihuahua--K2069007.jpg)">
             <div class="overlay"></div>
             <div class="gradient-overlay"></div>
             <div class="content">
@@ -24,7 +31,7 @@
                 </p>
             </div>
             <div>
-                <img src="http://igem.org/wiki/images/9/9f/T--Tec-Chihuahua--Partsimg.jpg" class="img-responsive">
+                <img src="http://2016.igem.org/wiki/images/thumb/5/55/T--Tec-Chihuahua--Plasmid.jpg/593px-T--Tec-Chihuahua--Plasmid.jpg.png" class="img-responsive">
             </div>
         </div>
         <div class="clearfix"></div>
@@ -32,7 +39,7 @@
     <div class="section" style="background-color: #87982E" data-anchor="submitted">
         <div class="sorted">            
             <div>
-                <img src="http://igem.org/wiki/images/9/9f/T--Tec-Chihuahua--Partsimg.jpg" class="img-responsive">
+                <img src="http://2016.igem.org/wiki/images/thumb/5/55/T--Tec-Chihuahua--Plasmid.jpg/593px-T--Tec-Chihuahua--Plasmid.jpg.png" class="img-responsive">
             </div>
             <div class="grow">
                 <p>

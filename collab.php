@@ -12,17 +12,20 @@
 <div class="std-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-2">                
+            <div class="col-md-2 col-sm-4">                
                 <div id="vgemcollaboration">
                     <a href="http://2016.igem.org/Team:Virginia/Collaborations" target="_blank"></a>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-2 col-sm-4">
+                <a href="http://2016.igem.org/Team:SVCE_CHENNAI/Collaborations"><img src="http://2016.igem.org/wiki/images/1/15/T--SVCE_CHENNAI--LactoshieldLogo.png" style="margin-top: 35px;" class="img-responsive"></a>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <a href="http://igem.today/"><img class="img-responsive" src="http://igem.org/wiki/images/thumb/2/20/T--Tec-Chihuahua--EPFLCollab.jpg/800px-T--Tec-Chihuahua--EPFLCollab.jpg.png" style="margin-top: 65px;" /></a>
+            </div>
+            <div class="col-md-6">
                 <div class="margin hidden-sm">&nbsp;</div>
                 <p class="attention">We had the awesome opportunity to communicate and collaborate with many teams while working in our project.</p>
-            </div>
-            <div class="col-md-2">
-                <img class="img-responsive" src="http://igem.org/wiki/images/thumb/2/20/T--Tec-Chihuahua--EPFLCollab.jpg/800px-T--Tec-Chihuahua--EPFLCollab.jpg.png" style="margin-top: 65px;" />
             </div>
         </div>  
         
@@ -37,6 +40,8 @@
 	Tec-Monterrey</p>
         <p><strong>EPF Laussane.- </strong> We sent a summary about our team and Project and they made us an interview, all for their wonderful blog which can be found here: <a href="http://igem.today/">http://igem.today/</a></p>
         <p><strong>XMU China.- </strong>We were happy to send our contribution to their Newsletter.</p>
+        <p><strong>UC-Davis.- </strong>We registered our team on the wonderful website they created: <a href="igemmatch.org">igemmatch.org</a> and answered their survey about the site. Thanks to this platform we had the chance to collaborate with other teams as well.</p>
+        <p><strong>Peshawar.- </strong>Got in contact thanks to <a href="igemmatch.org">igemmatch.org</a> and we shared and answered each other surveys.</p> 
     </div>
     <div class="parallax" data-parallax="bottom" style="background-image: url(http://igem.org/wiki/images/0/07/MeetupGto.jpg)">
         <p>Guanajuato Meet-up</p>

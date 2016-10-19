@@ -1,6 +1,6 @@
 var slideTimeout;
 
-$(function () {
+$(function() {
     header.init();
     calendar.init();
     parallax.init();
@@ -8,7 +8,7 @@ $(function () {
         $('#fullpage').fullpage({
             scrollBar: true,
             menu: '#slideMenu',
-            onLeave: function (index, nextIndex, direction) {
+            onLeave: function(index, nextIndex, direction) {
                 if (nextIndex == $('#fullpage .section').length || nextIndex == 1) {
                     $('.slide-menu').removeClass('show');
                     if (nextIndex == 1) {
@@ -25,11 +25,11 @@ $(function () {
                     $('.control-arrows span').removeClass('nope');
                     $('#upArrow').removeClass('go-down');
                     clearTimeout(slideTimeout);
-                    slideTimeout = setTimeout(function () {
+                    slideTimeout = setTimeout(function() {
                         $('.slide-menu li').animate({
                             opacity: 0
                         }, 1200);
-                        $('.slide-menu').one("mouseenter", function () {
+                        $('.slide-menu').one("mouseenter", function() {
                             $('.slide-menu li').animate({
                                 opacity: 1
                             }, 400);
@@ -48,15 +48,21 @@ $(function () {
         sr.reveal('.std-section > h2');
         sr.reveal('.calendar');
         sr.reveal('.calendar-legend');
+        sr.reveal('.std-section div img');         
+        sr.reveal('.std-section > p');
+        sr.reveal('.std-section > div p');
+        sr.reveal('.std-section > img');  
+        sr.reveal('.std-section li');
+        
     } catch (e) {
 
     }
 
-    $('#upArrow').click(function () {
+    $('#upArrow').click(function() {
         $.fn.fullpage.moveSectionUp();
     });
 
-    $('#downArrow').click(function () {
+    $('#downArrow').click(function() {
         $.fn.fullpage.moveSectionDown();
     });
 
@@ -67,7 +73,7 @@ $(function () {
     $('#HQ_page').attr('id', 'HQ_page-tec');
 
 
-    $('#getDocument').submit(function(e){
+    $('#getDocument').submit(function(e) {
         e.preventDefault();
         var postData = {
             email: $('#email').val(),
@@ -79,10 +85,10 @@ $(function () {
             url: "http://igem.jaquez.mx/download",
             method: "post",
             data: postData,
-            complete: function(r) { 
+            complete: function(r) {
                 var url = "";
                 $('#popupBlocked').removeClass("hidden");
-                if(language == "english") url = "http://2016.igem.org/wiki/images/4/49/T--Tec-Chihuahua--document-full-english.pdf";
+                if (language == "english") url = "http://2016.igem.org/wiki/images/4/49/T--Tec-Chihuahua--document-full-english.pdf";
                 else url = "http://2016.igem.org/wiki/images/b/b8/T--Tec-Chihuahua--document-full-spanish.pdf";
                 $('#popupBlocked a').attr('href', url);
                 window.open(url, '_blank');
@@ -90,16 +96,28 @@ $(function () {
         });
     });
 
+    console.log('ready');
+
+});
+
+$(window).load(function(){
+    console.log('load');
+    setTimeout(function(){
+        $('#loadingScreen').addClass('bye');
+        setTimeout(function(){
+            $('#loadingScreen').remove();
+        }, 510)
+    }, 1000);
 
 });
 
 var header = {
-    init: function () {
+    init: function() {
         var $meta = $('#meta'),
             activePage = $meta.data('thisPage');
         $(".option-item[data-pageTitle=" + activePage + "]").addClass('active');
 
-        $(document).on('click', '.option.header:not(.active-menu)', function () {
+        $(document).on('click', '.option.header:not(.active-menu)', function() {
             var $this = $(this),
                 $dropdown = $this.siblings('.option-dropdown'),
                 $parent = $this.parent();
@@ -120,8 +138,8 @@ var header = {
                             width: $('#optionsWrapper').width() - $parent.width()
                         })
                         $(this).addClass('active-menu');
-                        $dropdown.find('.option').each(function (i, elem) {
-                            setTimeout(function () {
+                        $dropdown.find('.option').each(function(i, elem) {
+                            setTimeout(function() {
                                 $(elem).css('transform', 'translate(0)');
                             }, 60 * i);
                         });
@@ -132,7 +150,7 @@ var header = {
             }
         });
 
-        $(document).on('click', '.active-menu', function () {
+        $(document).on('click', '.active-menu', function() {
             var $this = $(this),
                 $dropdown = $this.siblings('.option-dropdown'),
                 $parent = $this.parent();
@@ -144,22 +162,22 @@ var header = {
 
         });
 
-        $('.toggle-menu').click(function () {
+        $('.toggle-menu').click(function() {
             $('.main-nav').addClass('open');
             if ($('#globalWrapper').length > 0) {
                 $('#HQ_page-tec').append('<div class="black-overlay"></div>');
             } else {
                 $('body').append('<div class="black-overlay"></div>');
             }
-            $('.black-overlay').one('click', function () {
+            $('.black-overlay').one('click', function() {
                 $('.main-nav').removeClass('open');
                 $('.black-overlay').remove();
             });
         });
     },
 
-    toggleHeader: function ($dropdown) {
-        $('.option-dropdown').not($dropdown).each(function () {
+    toggleHeader: function($dropdown) {
+        $('.option-dropdown').not($dropdown).each(function() {
             var $otherDd = $(this);
             if ($otherDd.hasClass('open')) {
                 $otherDd.css('max-height', 0);
@@ -174,8 +192,8 @@ var header = {
         $dropdown.toggleClass('open');
     },
 
-    openHeader: function ($dropdown) {
-        $('.option-dropdown').not($dropdown).each(function () {
+    openHeader: function($dropdown) {
+        $('.option-dropdown').not($dropdown).each(function() {
             var $otherDd = $(this);
             if ($otherDd.hasClass('open')) {
                 $otherDd.css('max-height', 0);
@@ -990,7 +1008,23 @@ var calendar = {
         ],
 
         // october
-        [
+        [{
+                Text: "Clones selection <br> Reseeding transformed Cells to LB broth <br> Gram staining (verification)",
+                Mes: "10",
+                Día: "15",
+            },
+
+            {
+                Text: "Myxobacteria culture<br> Plasmid extraction <br> Ligation to Cm backbone",
+                Mes: "10",
+                Día: "16",
+            },
+
+            {
+                Text: "CTT Media <br> Myxobacteria electroporation",
+                Mes: "10",
+                Día: "17",
+            },
 
             {
                 Título: "Incorporation to the Arduino",
@@ -1000,7 +1034,7 @@ var calendar = {
                 Imagen_principal: ["http://igem.org/wiki/images/thumb/f/f5/T--Tec-Chihuahua--S10.14.jpg/798px-T--Tec-Chihuahua--S10.14.jpg"],
                 Texto: "The sensor was incorporated to the Arduino (the hardware of the sensor) and wires were labeled for their easy identification."
             },
-            
+
             {
                 Título: "Sensor assembly",
                 Categoría: "Sensor",
@@ -1020,22 +1054,23 @@ var calendar = {
             },
 
             {
-Título: "DVD Drive Disassembling 1",
-Categoría: "Sensor",
-Mes: "10",
-Día: "3",
-containSlider: true,
-Texto: "Some parts of the DVD Drive were removed to mount the new components. Slide to see a step-by-step explanation ",
-Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sensor1.jpg/756px-T--Tec-Chihuahua--Sensor1.jpg", 
-"http://igem.org/wiki/images/thumb/6/66/T--Tec-Chihuahua--Sensor2.jpg/757px-T--Tec-Chihuahua--Sensor2.jpg",
-"http://igem.org/wiki/images/thumb/4/42/T--Tec-Chihuahua--Sensor3.jpg/722px-T--Tec-Chihuahua--Sensor3.jpg",
-"http://igem.org/wiki/images/thumb/8/8f/T--Tec-Chihuahua--Sensor4.jpg/752px-T--Tec-Chihuahua--Sensor4.jpg",
-"http://igem.org/wiki/images/thumb/8/84/T--Tec-Chihuahua--Sensor5.jpg/755px-T--Tec-Chihuahua--Sensor5.jpg",
-"http://igem.org/wiki/images/thumb/b/b4/T--Tec-Chihuahua--Sensor6.jpg/761px-T--Tec-Chihuahua--Sensor6.jpg",
-"http://igem.org/wiki/images/thumb/2/22/T--Tec-Chihuahua--Sensor7.jpg/757px-T--Tec-Chihuahua--Sensor7.jpg",
-"http://igem.org/wiki/images/thumb/0/05/T--Tec-Chihuahua--Sensor8.jpg/755px-T--Tec-Chihuahua--Sensor8.jpg",
-"http://igem.org/wiki/images/thumb/8/85/T--Tec-Chihuahua--Sensor9.jpg/757px-T--Tec-Chihuahua--Sensor9.jpg"]
-},
+                Título: "DVD Drive Disassembling 1",
+                Categoría: "Sensor",
+                Mes: "10",
+                Día: "3",
+                containSlider: true,
+                Texto: "Some parts of the DVD Drive were removed to mount the new components. Slide to see a step-by-step explanation ",
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sensor1.jpg/756px-T--Tec-Chihuahua--Sensor1.jpg",
+                    "http://igem.org/wiki/images/thumb/6/66/T--Tec-Chihuahua--Sensor2.jpg/757px-T--Tec-Chihuahua--Sensor2.jpg",
+                    "http://igem.org/wiki/images/thumb/4/42/T--Tec-Chihuahua--Sensor3.jpg/722px-T--Tec-Chihuahua--Sensor3.jpg",
+                    "http://igem.org/wiki/images/thumb/8/8f/T--Tec-Chihuahua--Sensor4.jpg/752px-T--Tec-Chihuahua--Sensor4.jpg",
+                    "http://igem.org/wiki/images/thumb/8/84/T--Tec-Chihuahua--Sensor5.jpg/755px-T--Tec-Chihuahua--Sensor5.jpg",
+                    "http://igem.org/wiki/images/thumb/b/b4/T--Tec-Chihuahua--Sensor6.jpg/761px-T--Tec-Chihuahua--Sensor6.jpg",
+                    "http://igem.org/wiki/images/thumb/2/22/T--Tec-Chihuahua--Sensor7.jpg/757px-T--Tec-Chihuahua--Sensor7.jpg",
+                    "http://igem.org/wiki/images/thumb/0/05/T--Tec-Chihuahua--Sensor8.jpg/755px-T--Tec-Chihuahua--Sensor8.jpg",
+                    "http://igem.org/wiki/images/thumb/8/85/T--Tec-Chihuahua--Sensor9.jpg/757px-T--Tec-Chihuahua--Sensor9.jpg"
+                ]
+            },
 
             {
                 Text: "- Team video planning<br>- Reseeding of transformed cells",
@@ -1090,14 +1125,20 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
                 Mes: "10",
                 Día: "18",
                 Texto: "In front of an audience of students, teachers, parents, administrators and members of the TEC community we carried out our event to present the project, pamphlet and the final text of Human Practices for this edition of iGEM. For almost two hours the team interacted with the audience explaining and answering questions that came up. Likewise we took the opportunity to hand over the official t-shirts that will identify our team in the Giant Jamboree. The presentation was given by some team members that will not be with us in Boston and also we used this opportunity to increase the general interest about the importance of Synthetic Biology to solve actual problems. #RoadToBoston",
-                Imagen_principal: ["http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Cafeconciencia.jpg/409px-T--Tec-Chihuahua--Cafeconciencia.jpg.png"]
+                Imagen_principal: ["http://igem.org/wiki/images/thumb/a/a2/T--Tec-Chihuahua--Cafeconciencia.jpg/409px-T--Tec-Chihuahua--Cafeconciencia.jpg.png",
+                    "http://igem.org/wiki/images/thumb/6/62/T--Tec-Chihuahua--10.18.jpg/800px-T--Tec-Chihuahua--10.18.jpg",
+                    "http://igem.org/wiki/images/thumb/f/fc/T--Tec-Chihuahua--10.18b.jpg/800px-T--Tec-Chihuahua--10.18b.jpg",
+                    "http://igem.org/wiki/images/thumb/7/73/T--Tec-Chihuahua--10.18c.jpg/800px-T--Tec-Chihuahua--10.18c.jpg",
+                    "http://igem.org/wiki/images/thumb/1/1e/T--Tec-Chihuahua--10.18d.jpg/800px-T--Tec-Chihuahua--10.18d.jpg",
+                    "http://igem.org/wiki/images/thumb/5/52/T--Tec-Chihuahua--10.18e.jpg/800px-T--Tec-Chihuahua--10.18e.jpg"
+                ]
             }
 
         ]
 
     ],
 
-    init: function () {
+    init: function() {
         if ($('#calendar').length > 0) {
             var currentMonth = new Date().getMonth();
             calendar.loadMonth(currentMonth);
@@ -1105,7 +1146,7 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
         }
     },
 
-    loadMonth: function (monthNum, animate) {
+    loadMonth: function(monthNum, animate) {
         if (monthNum < 0 || monthNum >= 12) return false;
         var date = new Date(2016, monthNum),
             header = calendar.monthNames[date.getMonth()] + " " + date.getFullYear(),
@@ -1158,7 +1199,7 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
                 });
                 $("#calendarWrapper").addClass('right');
             }
-            setTimeout(function () {
+            setTimeout(function() {
                 $('#calendar').css('overflow', '');
                 $("#calendarWrapper").removeClass('left').removeClass('right');
                 $('#oldCalendar').remove();
@@ -1168,13 +1209,13 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
 
     },
 
-    populateMonth: function (monthNum) {
+    populateMonth: function(monthNum) {
         var $grids = $('#calendar div.calendar-grid');
         $grids.removeClass('has-event');
-        $.each(calendar.data[monthNum], function (i, v) {
+        $.each(calendar.data[monthNum], function(i, v) {
             var $day = $grids.find('[data-day=' + v.Día + ']').first().parent();
             if ($day.find('.event').length == 0) $day.prepend("<div class='event'></div>");
-            if (typeof (v.Text) == "undefined") {
+            if (typeof(v.Text) == "undefined") {
                 $day.find('.event').append("<img src='" + calendar.categories[v.Categoría] + "'/>");
                 $day.find('.event img').last().data('key', monthNum + '-' + i);
             } else {
@@ -1187,19 +1228,19 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
         });
     },
 
-    setEvents: function () {
-        $('.calendar-header .controls .glyphicon').click(function () {
+    setEvents: function() {
+        $('.calendar-header .controls .glyphicon').click(function() {
             var currentMonth = parseInt($('#calendar').data('currentMonth')),
                 tgtMonth = currentMonth + ($(this).index() == 0 ? -1 : 1);
             calendar.loadMonth(tgtMonth, true);
         });
 
-        $('.calendar-header .controls .dropdown ul li').click(function () {
+        $('.calendar-header .controls .dropdown ul li').click(function() {
             var tgtMonth = $(this).index();
             calendar.loadMonth(tgtMonth, true);
         });
 
-        $('.calendar-legend li').on('mouseenter click', function () {
+        $('.calendar-legend li').on('mouseenter click', function() {
             var $li = $(this);
             if ($li.find('.igemtooltip').length == 0) {
                 $li.append('<div class="igemtooltip"></div>');
@@ -1207,18 +1248,18 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
             }
         });
 
-        $(document).on('mouseleave click', '.igemtooltip', function (e) {
+        $(document).on('mouseleave click', '.igemtooltip', function(e) {
             var $tooltip = $(this);
-            $tooltip.fadeOut(function () {
+            $tooltip.fadeOut(function() {
                 if ($(this).closest('.calendar-grid').length == 0) $tooltip.remove();
             });
         });
 
-        $(document).on('click', '.has-event', function (e) {
+        $(document).on('click', '.has-event', function(e) {
             var $tooltip = $(this).find('.igemtooltip').fadeIn();
         });
 
-        $(document).on('click', '.event img', function (e) {
+        $(document).on('click', '.event img', function(e) {
             e.stopPropagation();
             var key = $(this).data('key').split('-'),
                 data = calendar.data[key[0]][key[1]];
@@ -1227,7 +1268,7 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
             if (data.Imagen_principal.length > 1) {
                 $("#modalSlider .carousel-inner").html('');
                 $("#modalSlider .carousel-indicators").html('');
-                $.each(data.Imagen_principal, function (i, v) {
+                $.each(data.Imagen_principal, function(i, v) {
                     var d = "<div class='item'><div class='slider-img' style='background-image: url(" + v + ");'></div></div>",
                         indicator = "<li data-target='#modalSlider' data-slide-to='" + i + "'></li>";
                     $("#modalSlider .carousel-inner").append(d);
@@ -1238,7 +1279,7 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
                 $("#modalSlider").carousel("pause").removeData();
                 $("#modalSlider").carousel(0);
                 $('#sliderWrapper').removeClass("hidden");
-                if (typeof (data.containSlider) !== "undefined") {
+                if (typeof(data.containSlider) !== "undefined") {
                     $('#modalSlider .slider-img').css({
                         backgroundSize: "auto 95%",
                     });
@@ -1261,9 +1302,9 @@ Imagen_principal: ["http://igem.org/wiki/images/thumb/d/d6/T--Tec-Chihuahua--Sen
 }
 
 var parallax = {
-    init: function () {
-        $(window).scroll(function () {
-            $('[data-parallax]').each(function () {
+    init: function() {
+        $(window).scroll(function() {
+            $('[data-parallax]').each(function() {
                 var scrollTop = $(window).scrollTop(),
                     offset = $(this).offset().top,
                     windowHeight = $(window).innerHeight(),
@@ -1272,6 +1313,22 @@ var parallax = {
                     newPosition;
                 if (scrollTop + windowHeight > offset) {
                     newPosition = 100 * (offset - scrollTop) / windowHeight
+                    if (!bottomUp) {
+                        newPosition = newPosition;
+                    }
+                    $(this).css('background-position', '50% ' + newPosition + "%");
+                }
+            });
+
+            $('[data-fixed]').each(function() {
+                var scrollTop = $(window).scrollTop(),
+                    offset = $(this).offset().top,
+                    windowHeight = $(window).innerHeight(),
+                    bottomUp = $(this).data('parallax') == 'bottom',
+                    divHeight = $(this).outerHeight(),
+                    newPosition;
+                if (scrollTop + windowHeight > offset) {
+                    newPosition = 1000 * (offset - scrollTop) / windowHeight
                     if (!bottomUp) {
                         newPosition = newPosition;
                     }
