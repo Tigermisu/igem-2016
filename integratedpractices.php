@@ -39,7 +39,7 @@
             
             <div class="grow">
                 <p class="left-text">
-                    We had the opportunity to visit more than ____ Ha of cultivations around our state, in the towns of Chihuahua, Cuauhtémoc, Meoqui and Rosales.
+                    We had the opportunity to visit more than 112 Ha of cultivations around our state, in the towns of Chihuahua, Cuauhtémoc, Meoqui and Rosales.
                 </p>
             </div>
         </div>

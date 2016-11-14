@@ -752,10 +752,10 @@ p.attention.left, #content .std-section p.attention.left {
     background-color: #fff;
     border: #bcbcbc solid 1px;
     display: none;
-    z-index: 50;
+    z-index: 500;
 }
 
-.calendar-legend li .igemtooltip p, .calendar-grid .igemtooltip p {
+.calendar-legend li .igemtooltip div, .calendar-grid .igemtooltip div {
     color: #333;
 }
 
@@ -972,12 +972,24 @@ input, select {
     margin-bottom: 15px;
 }
 
+.white-section .fp-ControlArrow.fp-prev {
+    border-color: transparent rgb(7, 135, 148) transparent transparent;
+}
+
+.white-section .fp-ControlArrow.fp-prev {
+    border-color: transparent transparent transparent rgb(7, 135, 148);
+}
+
 input {
     padding: 5px;
 }
 
-.team-member, .std-section > h2, .calendar, .calendar-legend, .std-section > p, .std-section > img, .std-section li, .std-section > div p, .std-section div img {
+.team-member, .std-section > h2, .calendar, .calendar-legend, .std-section > p, .std-section > img, .std-section li, .std-section > div p, .std-section div img, .std-section table {
     visibility: hidden;
+}
+
+.calendar-legend *, .calendar * {
+    visibility: visible !important;
 }
 
 @media (max-width: 767px) {

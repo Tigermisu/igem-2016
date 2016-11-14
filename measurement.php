@@ -20,20 +20,20 @@
             </div>
             <div class="col-lg-8 col-sm-6">
 
-                <p>The purpose of developing a sensor for this project is to correctly measure transformation efficiency.</p>
-                <p> The sensor had to analyze the surface of each sample and compare it to a successful test. To do the analysis, the sensor runs a scan across the surface of the petri dish in order to map the regions in which colonies were successfully deployed.
-                    With this information, we can determine at which level the transformation was complete. Additionally, the sensor runs a scan at determined lapses of time to see how it develops. </p>
+               <p>Our sensor measures transformation efficience (qualitative) and protein production efficiency (quantitative) by analyzing the surface of a sample petri dish and comparing it to a successful test. Since there exists no unit to measure how effective the transformation was, evaluating our protein expression is our main aim. </p>
+               <p>We transformed Myxobacteria to produce Reflectin, a protein able to reflect light. Parting from the fact that there are sensors that detect the amount of light that is emitted from a source; the sensor was developed based on Myxobacteria’s Reflectin production.</p>
             </div>
         </div>
 
+        <p>The sensor runs a scan across the surface to map the regions in which colonies deployed as well as the empty spaces. The LEDs (light source) light up the scanned surface, where Reflectin will make honour to its name and reflect the light. It is important to mention that red leds are useful because they fit the sensitivity of photoresistors. Both detector and source of light move at the same time, so that the light reflected is instantly detected. It is also relevant to mention that the sensor must run a scan at determined lapses to evaluate the evolution of expression, since the process of transformation of the cell and its production of the protein are not instantaneous (changes on the surface are slow) and depend on incubation time and conditions.</p>
 
-        <h2>Problem Statement</h2>
+        <h2>How does it work?</h2>
         <div class="row">
             <div class="col-lg-8 col-sm-6">
-                <p>The transformation process of myxobacteria needs to be measured in order to determine its effectiveness. The problem is that, to measure the effectiveness, there is no unit to measure how well the transformation was deployed. </p>
-                <h2>Information Gathering</h2>
-                <p>Myxobacteria can be transformed to produce proteins that reflect light. With this in mind, there are sensors that detect the amount of light that is emitted from a source.</p>
-                <p>The transformation process is not instantaneous. The changes on the surface occur slowly during the incubation process. This means that the system has to be measured at determined lapses of time. </p>
+                <p>Photoresistors change their resistance according to the amount of light: the greater the light, the smaller the resistance. Through a voltage divider, we can measure the value of resistance in terms of electrical voltage. Voltage can be measured by the microcontroller of the Arduino. </p>
+                <p>Reflectin will reflect the light coming from the light source; which is going to be detected by the photoresistor. This will produce a drop in the resistance of the photoresistor, which will result in a higher voltage measured due to the fact that the voltage is actually measured by a constant resistor, and due to the voltage divider it be a higher voltage.</p>
+                <p>Each photoresistor will give us, after the voltage divider, a level of voltage that is going to be written into a .txt file. This way, we are going to map an X and Y surface; in which each coordinate is a voltage value. </p>
+                <p>The .txt file will be uploaded to a server, and will be plotted. Each X value is a photoresistor; and the Y value is the value across the petri dish. </p>
 
             </div>
 
@@ -42,9 +42,14 @@
             </div>
         </div>
 
+        <h2>Relevance in the project</h2>
+        <p>The measurement represents a very important part of our project because it provides us with useful data to introduce in a model which then gives us predictions about the expression of our interest protein. This predictions can be taken into consideration when we develop a risk assessment process to know the impact of the project on a larger scale.</p>
+        <h2>Results and how to interpret</h2>
+        <p>Each line of photoresistors represents a segment of the sample. When graphed and lined together, they will map the surface of the petri dish and the contents. If certain point of the coordinate presents a high value, then it means that there is Reflectin is present. </p>
 
 
-        <h2>Materials</h2>
+
+        <h2>DIY Sensor - Materials</h2>
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <table class="table">

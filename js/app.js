@@ -44,15 +44,18 @@ $(function() {
 
     try {
         window.sr = ScrollReveal();
-        sr.reveal('.team-member');
-        sr.reveal('.std-section > h2');
+        sr.reveal('.std-section h2');
         sr.reveal('.calendar');
         sr.reveal('.calendar-legend');
-        sr.reveal('.std-section div img');         
-        sr.reveal('.std-section > p');
-        sr.reveal('.std-section > div p');
-        sr.reveal('.std-section > img');  
-        sr.reveal('.std-section li');
+        if($('.calendar').length == 0) {
+            sr.reveal('.team-member');
+            sr.reveal('.std-section div img');         
+            sr.reveal('.std-section > p');
+            sr.reveal('.std-section > div p');
+            sr.reveal('.std-section > img');  
+            sr.reveal('.std-section li');
+            sr.reveal('.std-section table');
+        }
         
     } catch (e) {
 
@@ -1223,7 +1226,7 @@ var calendar = {
                     $day.addClass('has-event');
                     $day.append('<div class="igemtooltip"></div>');
                 }
-                $day.find('.igemtooltip').append("<p>" + v.Text + "</p>");
+                $day.find('.igemtooltip').append("<div>" + v.Text + "</div>");
             }
         });
     },
@@ -1244,7 +1247,7 @@ var calendar = {
             var $li = $(this);
             if ($li.find('.igemtooltip').length == 0) {
                 $li.append('<div class="igemtooltip"></div>');
-                $li.find('.igemtooltip').html('<p>' + $li.data('tooltip') + '</p>').fadeIn();
+                $li.find('.igemtooltip').html('<div>' + $li.data('tooltip') + '</div>').fadeIn();
             }
         });
 
